@@ -150,16 +150,26 @@ const VirtualSettings2 = () => {
 const Header = styled.div`
   color: #fff;
   max-width: 970px;
+  
   h3 {
     margin-bottom: 8px;
-    color: #f5bc63;
+    font-size: 34px;
+    line-height: 44.2px;
+    font-weight: 600;
+    font-family: Spartan, sans-serif;
+    letter-spacing: 1px;
+    color: rgb(245, 188, 99);
+    text-align: start;
   }
   .title-desc {
+    padding: 0px;
+    margin: 0px 0px 20px;
+    font-size: 20px;
+    line-height: 35px;
     font-weight: 300;
-    /* letter-spacing: -1px; */
-    @media (min-width: 800px) {
-      font-size: 20px;
-    }
+    font-family: Spartan, sans-serif;
+    letter-spacing: normal;
+    color: rgb(255, 255, 255);
   }
 `;
 const Wrapper = styled.div`
@@ -168,8 +178,10 @@ const Wrapper = styled.div`
       display: none !important;
     }
   }
-  background-color: #262525;
-  padding: 5rem 0;
+  background-color: rgb(38, 37, 37);
+  padding: 80px 0px;
+  margin: 0px;
+  font-size: 14px;
   .icon {
     height: 42px;
     width: 42px;

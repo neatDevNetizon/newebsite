@@ -7,13 +7,9 @@ const BuildBusiness = () => {
       <div className='section'>
         <Header>
           <h3>Built For All Kinds Of Businesses</h3>
-          <p className='title-desc'>
-            Find the plan that suits your needs the best, we have customers
-            ranging from solo entrepreneurs starting a virtual tour business to
-            large corporations that want to showcase thousands of listings on
-            their website. If you are not sure what plan is best for your use
-            case - contact us via email.
-          </p>
+          <h5 className='title-desc'>
+            Find the plan that suits your needs the best, we have customers ranging from solo entrepreneurs starting a virtual tour business to large corporations that want to showcase thousands of listings on their website. If you are not sure what plan is best for your use case
+          </h5>
         </Header>
         <Body>
           <Item>
@@ -55,28 +51,55 @@ const BuildBusiness = () => {
 const Header = styled.div`
   color: #fff;
   h3 {
-    margin-bottom: 8px;
-    color: #f5bc63;
+    margin: 0px 0px 8px;
+    padding: 132px 0px 0px;
+    font-size: 60px;
+    line-height: 40.2px;
+    font-weight: 800;
+    font-family: Spartan, sans-serif;
+    letter-spacing: 1px;
+    color: rgb(245, 188, 99);
+    @media(max-width: 600px){
+      font-size:30px;
+      padding: 62px 0px 0px;
+    }
   }
   .title-desc {
-    font-weight: 300;
-    letter-spacing: -1px;
-    @media (min-width: 800px) {
-      font-size: 20px;
+    padding: 15px 0px 0px;
+    margin: 0px 0px 20px;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 500;
+    font-family: Spartan, sans-serif;
+    letter-spacing: normal;
+    color: rgb(158, 154, 154);
+    text-align: start;
+    max-width: 896px;
+    @media(max-width: 600px){
+      font-size:18px;
     }
   }
 `;
 const Wrapper = styled.div`
-  padding: 3rem 0;
-  background: #262525;
-  margin-bottom: 100px;
+  padding: 42px 0px 48px;
+  color: rgb(38, 37, 37);
+  background-color: rgb(38, 37, 37);
+  margin: 31px 0px 90px;
+  font-size: 14px;
+  line-height: 24.5px;
+  font-weight: 400;
+  letter-spacing: normal;
 `;
 const Body = styled.div`
   display: flex;
+  padding: 0px;
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-  margin-top: 2.5rem;
+  margin: 40px 0px 0px;
+  font-size: 14px;
+  line-height: 24.5px;
+  font-weight: 400;
   flex-wrap: wrap;
   @media (max-width: 800px) {
     justify-content: space-around;
@@ -85,9 +108,12 @@ const Body = styled.div`
 const Item = styled.div`
   height: 500px;
   width: 95vw;
-
+  font-size: 14px;
+  line-height: 24.5px;
+  letter-spacing: normal;
+  padding: 0px;
   max-width: 342px;
-  background: #4c4b4b;
+  background-color: rgb(76, 75, 75);
   display: flex;
   align-items: flex-end;
   transition: 0.3s ease;

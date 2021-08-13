@@ -61,14 +61,33 @@ const Wrapper = styled.div`
 const Header = styled.div`
   padding-left: 0.8rem;
   h3 {
-    margin-bottom: 8px;
+    padding: 170px 0px 0px;
+    margin: 8px 0px;
+    font-size: 60px;
+    line-height: 78px;
+    font-weight: 800;
+    font-family: Spartan, sans-serif;
+    letter-spacing: 1px;
+    color: rgb(17, 24, 39);
+    @media(max-width: 600px){
+      font-size:30px;
+      padding: 0px 0px 0px;
+    }
   }
   .title-desc {
-    font-weight: 300;
-    letter-spacing: -1px;
-    font-size: 16px;
-    @media (min-width: 800px) {
-      font-size: 20px;
+    font-weight: 500;
+    padding: 0px;
+    margin: 0px 0px 80px;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 500;
+    font-family: Spartan, sans-serif;
+    letter-spacing: normal;
+    color: rgb(107, 114, 128);
+    max-width: 896px;
+    @media(max-width: 600px){
+      font-size:18px;
+      padding-right: 10px;
     }
   }
 `;
@@ -82,20 +101,42 @@ const Body = styled.div`
 const ColumnLeft = styled.div``;
 const SingleItem = styled.div`
   background-color: #f8f8fa;
-  padding: 1.3rem 0.8rem;
+  padding: 20.8px 12.8px;
+  margin: 0px 0px 10px;
+  font-size: 14px;
+  line-height: 24.5px;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: rgb(38, 37, 37);
+  background-color: rgb(248, 248, 250);
   cursor: pointer;
   transition: 0.3s ease;
-  margin-bottom: 10px;
+  @media (max-width: 600px) {
+    
+  }
   h5 {
-    margin-bottom: 0px;
+    margin: 0px;
+    font-size: 20px;
+    padding: 0px;
+    line-height: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgb(38, 37, 37);
+    text-align: start;
     transition: 0.3s ease;
     @media (max-width: 600px) {
       margin-bottom: 8px;
     }
   }
   p {
+    padding: 3px 0px 0px;
     font-size: 12px;
-    margin: 0;
+    margin: 0px;
+    line-height: 21px;
+    font-weight: 500;
+    letter-spacing: normal;
+    color: rgb(107, 114, 128);
+    text-align: start;
     @media (max-width: 600px) {
       font-size: 16px;
       margin-bottom: 1rem;

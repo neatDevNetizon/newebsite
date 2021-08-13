@@ -6,7 +6,7 @@ const Platform = () => {
   return (
     <Wrapper className='section'>
       <Header>
-        <h3>One Unified Platform </h3>
+        <h3 className="plat-title">One Unified Platform </h3>
         <p className='title-desc'>
           We bring together everything required to build virtual tours , apps
           that capture 360 panoramas and allow embedding them globally. Stop
@@ -83,10 +83,39 @@ const Header = styled.div`
   }
   .title-desc {
     font-weight: 300;
-    letter-spacing: -0.5px;
-    font-size: 16px;
-    @media (min-width: 800px) {
-      font-size: 20px;
+    letter-spacing: normal;
+    font-size: 24px;
+    margin: 0px 0px 20px;
+    padding: 24px 0px 66px;
+    color: rgb(107, 114, 128);
+    text-align: start;
+    max-width: 896px;
+    font-weight: 500;
+    @media (max-width: 600px) {
+      font-size: 18px;
+      margin: -1px 0px 20px -9px;
+      padding: 24px 0px 66px;
+      line-height: 28px;
+    }
+  }
+  .plat-title {
+    font-weight: 800;
+    line-height: 78px;
+    font-size: 60px;
+    padding: 241px 0px 0px;
+    margin: 7px 0px 8px;
+    color: rgb(61, 61, 61);
+    letter-spacing: 1px;
+    @media (max-width: 600px) {
+      padding: 137px 0px 0px;
+      margin: 7px 39px 8px -12px;
+      font-size: 30px;
+      line-height: 39px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      font-family: Spartan, sans-serif;
+      color: rgb(17, 24, 39);
+      text-align: start;
     }
   }
 `;
@@ -100,20 +129,42 @@ const Body = styled.div`
 const ColumnLeft = styled.div``;
 const SingleItem = styled.div`
   background-color: #f8f8fa;
-  padding: 1.3rem 0.8rem;
+  padding: 20.8px 12.8px;
+  margin: 0px 0px 10px;
+  font-size: 14px;
+  line-height: 24.5px;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: rgb(38, 37, 37);
+  background-color: rgb(248, 248, 250);
   cursor: pointer;
   transition: 0.3s ease;
-  margin-bottom: 10px;
+  @media (max-width: 600px) {
+    
+  }
   h5 {
-    margin-bottom: 0px;
+    margin: 0px;
+    font-size: 20px;
+    padding: 0px;
+    line-height: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgb(38, 37, 37);
+    text-align: start;
     transition: 0.3s ease;
     @media (max-width: 600px) {
       margin-bottom: 8px;
     }
   }
   p {
+    padding: 3px 0px 0px;
     font-size: 12px;
-    margin: 0;
+    margin: 0px;
+    line-height: 21px;
+    font-weight: 500;
+    letter-spacing: normal;
+    color: rgb(107, 114, 128);
+    text-align: start;
     @media (max-width: 600px) {
       font-size: 16px;
       margin-bottom: 1rem;

@@ -9,8 +9,8 @@ import Image from 'next/image';
 const Company = () => {
   return (
     <Wrapper className='section'>
-      <h3>The Affordable Matterport Alternative The Matters</h3>
-      <p>No lock-ins Total Freedom. 100,000 Clients can&apos;t be wrong</p>
+      <h3 className="companyBanner">The Affordable Matterport Alternative The Matters</h3>
+      <h5 className="companyDesc">No lock-ins Total Freedom. 100,000 Clients can&apos;t be wrong</h5>
       <div className='company'>
         <div className='company-img'>
           <Image src={samsung} alt='' />
@@ -56,6 +56,37 @@ const Wrapper = styled.div`
   }
   p {
     margin-top: 0;
+  }
+  .companyBanner {
+    font-size: 60px;
+    font-weight: 700;
+    padding: 96px 0px 0px;
+    font-family: Spartan, sans-serif;
+    letter-spacing: 1px;
+    color: rgb(38, 37, 37);
+    margin-bottom: 20px;
+    line-height: 78px;
+    @media (max-width: 600px) {
+      font-size: 36px;
+      line-height: 39px;
+      padding: 32px 0px 0px;
+    }
+    @media (max-width: 450px) {
+      font-size: 30px;
+      padding: 32px 0px 0px;
+      line-height: 39px;
+    }
+    @media (max-width: 330px) {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+  .companyDesc {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0px 0px 20px;
+    padding: 0px;
+    line-height: 28px;
   }
   .company {
     padding-top: 2rem;

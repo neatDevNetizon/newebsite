@@ -9,7 +9,7 @@ const Hero = () => {
         <div className='curve'></div>
         <Navbar />
         <HeroSection className='section'>
-          <p className='create'>Capture, Build & Distribute</p>
+          <p className='create'></p>
           <h1 className='title'>
             A complete virtual tour platform, engineered for growth
           </h1>
@@ -125,17 +125,20 @@ const HeroSection = styled.div`
     }
   }
   .title {
-    max-width: 612px;
+    max-width: 763px;
     letter-spacing: -1px;
     text-transform: none;
     font-weight: 500;
     line-height: 1.3;
+    font-size: 60px;
+    font-weight: 800;
+    color: rgb(38, 37, 37);
     @media (max-width: 600px) {
       font-size: 36px;
       margin: 0;
     }
-    @media (max-width: 400px) {
-      font-size: 30px;
+    @media (max-width: 450px) {
+      font-size: 29px;
       margin: 0;
     }
     @media (max-width: 330px) {
