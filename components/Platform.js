@@ -2,19 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import Image1 from './../images/Image 1.png';
 import Image from 'next/image';
+import buildicon from "./../images/platform-icon.svg"
 const Platform = () => {
   return (
     <Wrapper className='section'>
       <Header>
         <div className="platform-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
-            <g id="Group_75154" data-name="Group 75154" transform="translate(1.5 -70.5)">
-              <circle id="primary" cx="21.596" cy="21.596" r="21.596" transform="translate(2.541 78.352)" fill="#beffc3"/>
-              <circle id="primary-2" data-name="primary" cx="26.5" cy="26.5" r="26.5" transform="translate(0 72)" fill="#beffc3" stroke="#262525" stroke-width="3"/>
-              <line id="Line_10" data-name="Line 10" x1="9.279" transform="translate(28.611 93.212) rotate(135)" fill="none" stroke="#262525" stroke-linecap="round" stroke-width="3"/>
-              <line id="Line_11" data-name="Line 11" x1="9.279" transform="translate(28.611 106.253) rotate(-135)" fill="none" stroke="#262525" stroke-linecap="round" stroke-width="3"/>
-            </g>
-          </svg>
+          <Image src={buildicon} alt=""/>
         </div>
         <h3 className="plat-title">One Unified Platform </h3>
         <p className='title-desc'>

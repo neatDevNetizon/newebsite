@@ -14,7 +14,7 @@ const Navbar = () => {
         <nav>
           <div className='logo'>
             <Link href='/' passHref>
-              <img src='/images/fullogo.png' alt='aaa' />
+              <Image src={fullogo} alt='aaa' width="250" height="50"/>
             </Link>
           </div>
           <div className='nav-links'>
