@@ -16,24 +16,14 @@ const Footer = () => {
       <div className='footer-top section'>
         <FooterTop>
           <ColumnTop>
-            <h4>Build Globally Scalable Applications</h4>
+            <h4>Ready To Create Your  Virtual Tour ?</h4>
             <p className='font-20'>
-              We bring together everything that’s required to build websites and
-              apps that accept payments and send payouts globally. Stripe’s
-              products power payments for online and in-person retailers.
+            Start your We bring together everything that’s required to build websites and apps that accept payments and send payouts globally. Stripe’s products power payments for online and 
             </p>
             <button className='btn trial-btn'>Start Free Trial</button>
           </ColumnTop>
-          <ColumnTop className='hide-mobile'>
-            <h4>Build Globally Scalable Applications</h4>
-            <p className='font-20'>
-              We bring together everything that’s required to build websites and
-              apps that accept payments and send payouts globally. Stripe’s
-              products power payments for online and in-person retailers.
-            </p>
-          </ColumnTop>
           <ColumnTop>
-            <h4>Build Globally Scalable Applications</h4>
+            <h4>Questions About Our Plans ?</h4>
             <p className='font-20'>
               We bring together everything that’s required to build websites and
               apps that accept payments and send payouts globally. Stripe’s
@@ -45,6 +35,29 @@ const Footer = () => {
       </div>
       <hr />
       <div className='footer-middle section'>
+        <div className='teliport'>
+          <div className='heading hide-mobile'>
+            <Image src={logo} alt='' />
+            <h3>teliportme</h3>
+          </div>
+          <p className='body2 hide-mobile'>
+            Create & Share 360 Photos And Virtual Tours
+          </p>
+          <div className='icon-container'>
+            <Link href='/' passHref>
+              <Image src={facebook} alt='' />
+            </Link>
+            <Link href='/' passHref>
+              <Image src={instagram} alt='' />
+            </Link>
+            <Link href='/' passHref>
+              <Image src={twitter} alt='' />
+            </Link>
+            <Link href='/' passHref>
+              <Image src={youtube} alt='' />
+            </Link>
+          </div>
+        </div>
         <div className='links'>
           <h4>Important Links</h4>
           <ul>
@@ -80,29 +93,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className='teliport'>
-          <div className='heading hide-mobile'>
-            <Image src={logo} alt='' />
-            <h3>teliportme</h3>
-          </div>
-          <p className='body2 hide-mobile'>
-            Create & Share 360 Photos And Virtual Tours
-          </p>
-          <div className='icon-container'>
-            <Link href='/' passHref>
-              <Image src={facebook} alt='' />
-            </Link>
-            <Link href='/' passHref>
-              <Image src={instagram} alt='' />
-            </Link>
-            <Link href='/' passHref>
-              <Image src={twitter} alt='' />
-            </Link>
-            <Link href='/' passHref>
-              <Image src={youtube} alt='' />
-            </Link>
-          </div>
-        </div>
+        
       </div>
       <hr className='hr2' />
       <div className='footer-bottom section'>
@@ -135,7 +126,8 @@ const Wrapper = styled.footer`
     min-height: 600px;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    padding-top: 100px;
+    justify-content: start;
     flex-direction: column;
     gap: 45px;
   }
@@ -302,7 +294,7 @@ const Wrapper = styled.footer`
 `;
 const FooterTop = styled.div`
   display: flex;
-  gap: 3rem 1rem;
+  gap: 2rem 1rem;
   justify-content: space-between;
   flex-wrap: wrap;
   @media (max-width: 1000px) {
@@ -314,9 +306,10 @@ const ColumnTop = styled.div`
   max-width: 385px;
   h4 {
     color: #f5bc63;
+    font-size: 18px;
   }
   .font-20 {
-    font-size: 20px;
+    font-size: 14px;
     color: #fff;
     @media (max-width: 1000px) {
       font-size: 14px;

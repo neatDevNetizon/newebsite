@@ -42,39 +42,65 @@ const WebinarTraining = () => {
 
         <Slider {...settings} className='slider'>
           <div className='wrapper'>
-            <Image src={c23} alt='' />
+            <div className="bagdeFor">
+              <Image src={c23} alt='' />
+              <div className="badge">
+                <a>Free</a>
+              </div>
+            </div>
             <div className='content'>
               <h5>Photography Masterclass: A Complete Guide to Photography</h5>
               <p className='body2'>Skill1, skil2, skill3, skill4</p>
             </div>
           </div>
           <div className='wrapper'>
-            <Image src={c22} alt='' />
+            <div className="bagdeFor">
+              <Image src={c22} alt='' />
+              <div className="badge">
+                <a>Free</a>
+              </div>
+            </div>
             <div className='content'>
               <h5>Photography Masterclass: A Complete Guide to Photography</h5>
               <p className='body2'>Skill1, skil2, skill3, skill4</p>
             </div>
           </div>
           <div className='wrapper'>
-            <Image src={c21} alt='' />
+            <div className="bagdeFor">
+              <Image src={c21} alt='' />
+              <div className="badge">
+                <a>Free</a>
+              </div>
+            </div>
             <div className='content'>
               <h5>Photography Masterclass: A Complete Guide to Photography</h5>
               <p className='body2'>Skill1, skil2, skill3, skill4</p>
             </div>
           </div>
           <div className='wrapper'>
-            <Image src={c22} alt='' />
+            <div className="bagdeFor">
+              <Image src={c22} alt='' />
+              <div className="badge">
+                <a>Free</a>
+              </div>
+            </div>
             <div className='content'>
               <h5>Photography Masterclass: A Complete Guide to Photography</h5>
               <p className='body2'>Skill1, skil2, skill3, skill4</p>
             </div>
           </div>
           <div className='wrapper'>
-            <Image src={c21} alt='' />
+            <div className="bagdeFor">
+              <Image src={c21} alt='' />
+              <div className="badge">
+                <a>Free</a>
+              </div>
+            </div>
             <div className='content'>
               <h5>Photography Masterclass: A Complete Guide to Photography</h5>
               <p className='body2'>Skill1, skil2, skill3, skill4</p>
             </div>
+            
           </div>
         </Slider>
       </section>
@@ -98,7 +124,9 @@ const Wrapper = styled.section`
     }
     h3 {
       margin-bottom: 65px;
-      text-align: right;
+      text-align: left;
+      font-size: 34px;
+      font-weight: bold;
       @media (max-width: 1070px) {
         text-align: center;
       }
@@ -109,6 +137,9 @@ const Wrapper = styled.section`
     top: -40%;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .bagdeFor {
+    position: relative;
   }
 
   @media screen and (min-width: 601px) and (max-width: 900px) {
@@ -134,6 +165,17 @@ const Wrapper = styled.section`
 
     img {
       width: 100%;
+    }
+    .badge {
+      position: absolute;
+      bottom: 30px;
+      right: 20px;
+      a {
+        color: white;
+        padding: 8px 14px;
+        border-radius: 20px;
+        background-color: #33B864;
+      }
     }
 
     .content {
@@ -202,7 +244,7 @@ const Wrapper = styled.section`
   }
   .slick-prev {
     @media (min-width: 1080px) {
-      left: 40%;
+      left: 86%;
       transform: translateX(-40%);
     }
     @media (max-width: 650px) {
@@ -219,7 +261,7 @@ const Wrapper = styled.section`
   }
   .slick-next {
     @media (min-width: 1080px) {
-      left: 50%;
+      left: 93%;
       transform: translateX(-50%);
     }
     @media (max-width: 650px) {

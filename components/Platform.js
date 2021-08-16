@@ -6,6 +6,16 @@ const Platform = () => {
   return (
     <Wrapper className='section'>
       <Header>
+        <div className="platform-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+            <g id="Group_75154" data-name="Group 75154" transform="translate(1.5 -70.5)">
+              <circle id="primary" cx="21.596" cy="21.596" r="21.596" transform="translate(2.541 78.352)" fill="#beffc3"/>
+              <circle id="primary-2" data-name="primary" cx="26.5" cy="26.5" r="26.5" transform="translate(0 72)" fill="#beffc3" stroke="#262525" stroke-width="3"/>
+              <line id="Line_10" data-name="Line 10" x1="9.279" transform="translate(28.611 93.212) rotate(135)" fill="none" stroke="#262525" stroke-linecap="round" stroke-width="3"/>
+              <line id="Line_11" data-name="Line 11" x1="9.279" transform="translate(28.611 106.253) rotate(-135)" fill="none" stroke="#262525" stroke-linecap="round" stroke-width="3"/>
+            </g>
+          </svg>
+        </div>
         <h3 className="plat-title">One Unified Platform </h3>
         <p className='title-desc'>
           We bring together everything required to build virtual tours , apps
@@ -56,7 +66,7 @@ const Platform = () => {
   );
 };
 const Wrapper = styled.div`
-  margin: 80px auto;
+  margin: 1rem auto;
 `;
 const Header = styled.div`
   padding-left: 0.8rem;
@@ -65,29 +75,30 @@ const Header = styled.div`
     margin-bottom: 8px;
     position: relative;
     display: block;
-    :before {
-      width: 420px;
-      content: '';
-      height: 25px;
-      position: absolute;
-      bottom: 5px;
-      left: -5px;
-      background-color: #fcedd6;
-      z-index: -1;
-      clip-path: polygon(2% 0, 100% 0, 98% 100%, 0 100%);
-      @media (max-width: 799px) {
-        width: 80%;
-        height: 70%;
-      }
-    }
+    // :before {
+    //   width: 420px;
+    //   content: '';
+    //   height: 25px;
+    //   position: absolute;
+    //   bottom: 5px;
+    //   left: -5px;
+    //   background-color: #fcedd6;
+    //   z-index: -1;
+    //   clip-path: polygon(2% 0, 100% 0, 98% 100%, 0 100%);
+    //   @media (max-width: 799px) {
+    //     width: 80%;
+    //     height: 70%;
+    //   }
+    // }
   }
   .title-desc {
     font-weight: 300;
     letter-spacing: normal;
     font-size: 24px;
+    line-height: 40px;
     margin: 0px 0px 20px;
-    padding: 24px 0px 66px;
-    color: rgb(107, 114, 128);
+    padding: 24px 0px 35px;
+    color: #6B7280;
     text-align: start;
     max-width: 896px;
     font-weight: 500;
@@ -98,14 +109,17 @@ const Header = styled.div`
       line-height: 28px;
     }
   }
+  .platform-icon {
+    padding: 200px 0px 0px;
+  }
   .plat-title {
     font-weight: 800;
     line-height: 78px;
     font-size: 60px;
-    padding: 241px 0px 0px;
+    padding: 41px 0px 0px;
     margin: 7px 0px 8px;
-    color: rgb(61, 61, 61);
-    letter-spacing: 1px;
+    color: rgba(18,96,24, 0.8);
+    letter-spacing: -0.18rem;
     @media (max-width: 600px) {
       padding: 137px 0px 0px;
       margin: 7px 39px 8px -12px;
@@ -146,10 +160,10 @@ const SingleItem = styled.div`
     margin: 0px;
     font-size: 20px;
     padding: 0px;
-    line-height: 26px;
+    line-height: 45px;
     font-weight: 700;
     letter-spacing: 1px;
-    color: rgb(38, 37, 37);
+    color: rgb(17, 24, 39, 0.8);
     text-align: start;
     transition: 0.3s ease;
     @media (max-width: 600px) {
@@ -163,7 +177,7 @@ const SingleItem = styled.div`
     line-height: 21px;
     font-weight: 500;
     letter-spacing: normal;
-    color: rgb(107, 114, 128);
+    color: rgba(107, 114, 128, 0.8);
     text-align: start;
     @media (max-width: 600px) {
       font-size: 16px;
@@ -171,9 +185,9 @@ const SingleItem = styled.div`
     }
   }
   :hover {
-    background-color: #fff7ea;
+    background-color: rgba(190, 255, 195, 0.12);
     h5 {
-      color: #f8ba59;
+      color: #3C7C41;
     }
   }
 `;

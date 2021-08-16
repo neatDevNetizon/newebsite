@@ -115,14 +115,24 @@ const Wrapper = styled.section`
         }
       }
     }
+    .blob {
+      min-width: 600px;
+      img{
+        opacity: 0.4;
+      }
+    }
     .right-container {
       position: absolute;
       max-width: 80vw;
       h3 {
         line-height: 55px;
+        color: #111827;
+        font-weight: bold;
       }
       p {
-        max-width: 405px;
+        max-width: 450px;
+        color: #6B7280;
+        font-size: 20px;
       }
       .trial-btn {
         height: 46px;

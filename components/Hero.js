@@ -34,6 +34,7 @@ const Wrapper = styled.div`
 
   .bg {
     height: 75vh;
+    min-height: 620px;
     // background: url('images/bg.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;

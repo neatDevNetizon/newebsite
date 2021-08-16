@@ -70,13 +70,13 @@ const CarouselComponent = () => {
               </div>
             </div>
             <div className='right'>
+              <h3>Powering our tours</h3>
               <p className='review'>
-                Testimonials or quotes from your customers are one of the most
-                common forms of customer reviews. You’re most likely to find
-                them on a company website.
+              We will definitely use this APP for our future customers in realestate and small business ...! Excellent solution 👌❤️
               </p>
               <div className='writer'>
                 <h4>Shanto</h4>
+                <h6>VP of Photography</h6>
                 <p>Frontend Developer</p>
               </div>
             </div>
@@ -89,12 +89,13 @@ const CarouselComponent = () => {
               </div>
             </div>
             <div className='right'>
+              <h2>Powering our tours</h2>
               <p className='review'>
-                We will definitely use this app for our futere customers in the
-                realstate and small business...! Excellent solutions
+                We will definitely use this APP for our future customers in realestate and small business ...! Excellent solution 👌❤️
               </p>
               <div className='writer'>
                 <h4>Sandro</h4>
+                <h6>VP of Photography</h6>
                 <p>Seo Web Milan</p>
               </div>
             </div>
@@ -133,15 +134,14 @@ const CarouselComponent = () => {
 };
 
 const CarouselWrapper = styled.div`
-  padding: 1rem;
+  padding: 8rem 2rem;
   position: relative;
-
   .container {
     display: grid !important;
-    background-color: #fff8ea;
+    background-color: #FFE8B9;
     width: 90vw;
     max-width: 900px;
-    padding: 1.5rem;
+    padding: 3rem;
     margin: 0 auto;
     border-radius: 10px;
 
@@ -151,17 +151,17 @@ const CarouselWrapper = styled.div`
   }
   .left {
     /* position: relative; */
-    padding: 1rem;
+    text-align: center;
     @media (max-width: 900px) {
       display: flex;
       justify-content: center;
     }
   }
   .img-container {
-    height: 250px;
+    height: 300px;
     margin-bottom: 1rem;
     border-radius: 10px;
-    width: 200px;
+    width: 250px;
     object-fit: cover;
     overflow: hidden;
     @media (max-width: 600px) {

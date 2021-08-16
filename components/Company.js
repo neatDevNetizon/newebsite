@@ -42,8 +42,7 @@ const Wrapper = styled.div`
   }
   margin: 0rem auto;
   max-width: 1056px;
-  margin-top: -20px;
-
+  margin-top: 20px;
   z-index: 99999;
 
   h3 {
@@ -82,21 +81,23 @@ const Wrapper = styled.div`
     }
   }
   .companyDesc {
-    font-weight: 400;
-    font-size: 16px;
-    margin: 0px 0px 20px;
+    font-size: 18px;
+    margin: 45px 0px 0px;
     padding: 0px;
     line-height: 28px;
+    color: rgba(38, 37, 37, 0.8);
+    font-weight: 500;
   }
   .company {
-    padding-top: 2rem;
+    padding-top: 0px;
     display: flex;
     flex-wrap: Wrap;
     gap: 1rem;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 4rem;
-    margin-top: 2rem;
+    margin-top: 10px;
+    opacity: 0.8;
     @media (max-width: 900px) {
       margin-bottom: 2rem;
     }

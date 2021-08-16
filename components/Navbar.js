@@ -14,7 +14,7 @@ const Navbar = () => {
         <nav>
           <div className='logo'>
             <Link href='/' passHref>
-              <Image src={fullogo} alt='aaa' />
+              <img src='/images/fullogo.png' alt='aaa' />
             </Link>
           </div>
           <div className='nav-links'>
@@ -126,6 +126,7 @@ const Wrapper = styled.nav`
       z-index: 9;
       cursor: pointer;
       img {
+        max-width: 250px;
       }
     }
     ul {

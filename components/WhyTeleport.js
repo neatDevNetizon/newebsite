@@ -6,7 +6,17 @@ const WhyTeleport = () => {
   return (
     <Wrapper className='section'>
       <Header>
-        <h3>Why Teliportme ?</h3>
+        <div className="platform-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+            <g id="Group_75154" data-name="Group 75154" transform="translate(1.5 -70.5)">
+              <circle id="primary" cx="21.596" cy="21.596" r="21.596" transform="translate(2.541 78.352)" fill="#91e3fc"/>
+              <circle id="primary-2" data-name="primary" cx="26.5" cy="26.5" r="26.5" transform="translate(0 72)" fill="#91e3fc" stroke="#262525" stroke-width="3"/>
+              <line id="Line_10" data-name="Line 10" x1="9.279" transform="translate(28.611 93.212) rotate(135)" fill="none" stroke="#262525" stroke-linecap="round" stroke-width="3"/>
+              <line id="Line_11" data-name="Line 11" x1="9.279" transform="translate(28.611 106.253) rotate(-135)" fill="none" stroke="#262525" stroke-linecap="round" stroke-width="3"/>
+            </g>
+          </svg>
+        </div>
+        <h3 className="plat-title">One Unified Platform </h3>
         <p className='title-desc'>
           We bring together everything required to build virtual tours , apps
           that capture 360 panoramas and allow embedding them globally. Stop
@@ -16,7 +26,7 @@ const WhyTeleport = () => {
       <Body>
         <ColumnLeft>
           <SingleItem>
-            <h5>Fastest Download</h5>
+            <h5>All 360 Cameras Supported</h5>
             <p>
               We support a large variety of 360 cameras and also have our own
               dedicated apps to capture 360 photos and bring our own space to
@@ -24,7 +34,7 @@ const WhyTeleport = () => {
             </p>
           </SingleItem>
           <SingleItem>
-            <h5>Security + Performance</h5>
+            <h5>Powerful Editor</h5>
             <p>
               We support a large variety of 360 cameras and also have our own
               dedicated apps to capture 360 photos and bring our own space to
@@ -32,7 +42,7 @@ const WhyTeleport = () => {
             </p>
           </SingleItem>
           <SingleItem>
-            <h5>Battle Tested Reliability</h5>
+            <h5>Full Customization</h5>
             <p>
               We support a large variety of 360 cameras and also have our own
               dedicated apps to capture 360 photos and bring our own space to
@@ -40,7 +50,7 @@ const WhyTeleport = () => {
             </p>
           </SingleItem>
           <SingleItem>
-            <h5>Battle Tested Reliability</h5>
+            <h5>Share, Embed And Add To Listings</h5>
             <p>
               We support a large variety of 360 cameras and also have our own
               dedicated apps to capture 360 photos and bring our own space to
@@ -56,38 +66,70 @@ const WhyTeleport = () => {
   );
 };
 const Wrapper = styled.div`
-  margin: 50px auto;
+  margin: 1rem auto;
 `;
 const Header = styled.div`
   padding-left: 0.8rem;
   h3 {
-    padding: 170px 0px 0px;
-    margin: 8px 0px;
-    font-size: 60px;
-    line-height: 78px;
-    font-weight: 800;
-    font-family: Spartan, sans-serif;
-    letter-spacing: 1px;
-    color: rgb(17, 24, 39);
-    @media(max-width: 600px){
-      font-size:30px;
-      padding: 0px 0px 0px;
-    }
+    z-index: 11;
+    margin-bottom: 8px;
+    position: relative;
+    display: block;
+    // :before {
+    //   width: 420px;
+    //   content: '';
+    //   height: 25px;
+    //   position: absolute;
+    //   bottom: 5px;
+    //   left: -5px;
+    //   background-color: #fcedd6;
+    //   z-index: -1;
+    //   clip-path: polygon(2% 0, 100% 0, 98% 100%, 0 100%);
+    //   @media (max-width: 799px) {
+    //     width: 80%;
+    //     height: 70%;
+    //   }
+    // }
   }
   .title-desc {
-    font-weight: 500;
-    padding: 0px;
-    margin: 0px 0px 80px;
+    font-weight: 300;
+    letter-spacing: normal;
     font-size: 24px;
     line-height: 40px;
-    font-weight: 500;
-    font-family: Spartan, sans-serif;
-    letter-spacing: normal;
-    color: rgb(107, 114, 128);
+    margin: 0px 0px 20px;
+    padding: 24px 0px 35px;
+    color: #6B7280;
+    text-align: start;
     max-width: 896px;
-    @media(max-width: 600px){
-      font-size:18px;
-      padding-right: 10px;
+    font-weight: 500;
+    @media (max-width: 600px) {
+      font-size: 18px;
+      margin: -1px 0px 20px -9px;
+      padding: 24px 0px 66px;
+      line-height: 28px;
+    }
+  }
+  .platform-icon {
+    padding: 200px 0px 0px;
+  }
+  .plat-title {
+    font-weight: 800;
+    line-height: 78px;
+    font-size: 60px;
+    padding: 41px 0px 0px;
+    margin: 7px 0px 8px;
+    color: rgba(13, 82, 103, 0.82);
+    letter-spacing: -0.18rem;
+    @media (max-width: 600px) {
+      padding: 137px 0px 0px;
+      margin: 7px 39px 8px -12px;
+      font-size: 30px;
+      line-height: 39px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      font-family: Spartan, sans-serif;
+      color: rgb(17, 24, 39);
+      text-align: start;
     }
   }
 `;
@@ -118,10 +160,10 @@ const SingleItem = styled.div`
     margin: 0px;
     font-size: 20px;
     padding: 0px;
-    line-height: 26px;
+    line-height: 45px;
     font-weight: 700;
     letter-spacing: 1px;
-    color: rgb(38, 37, 37);
+    color: rgb(17, 24, 39, 0.8);
     text-align: start;
     transition: 0.3s ease;
     @media (max-width: 600px) {
@@ -135,7 +177,7 @@ const SingleItem = styled.div`
     line-height: 21px;
     font-weight: 500;
     letter-spacing: normal;
-    color: rgb(107, 114, 128);
+    color: rgba(107, 114, 128, 0.8);
     text-align: start;
     @media (max-width: 600px) {
       font-size: 16px;
@@ -143,9 +185,9 @@ const SingleItem = styled.div`
     }
   }
   :hover {
-    background-color: #fff7ea;
+    background-color: rgba(145, 227, 252, 0.12);
     h5 {
-      color: #f8ba59;
+      color: #248DAD;
     }
   }
 `;

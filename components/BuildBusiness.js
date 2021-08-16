@@ -8,7 +8,7 @@ const BuildBusiness = () => {
         <Header>
           <h3>Built For All Kinds Of Businesses</h3>
           <h5 className='title-desc'>
-            Find the plan that suits your needs the best, we have customers ranging from solo entrepreneurs starting a virtual tour business to large corporations that want to showcase thousands of listings on their website. If you are not sure what plan is best for your use case
+            Find the plan that suits your needs the best, we have customers ranging from solo entrepreneurs starting a virtual tour business to large corporations that want to showcase thousands of listings on their website.
           </h5>
         </Header>
         <Body>
@@ -52,13 +52,13 @@ const Header = styled.div`
   color: #fff;
   h3 {
     margin: 0px 0px 8px;
-    padding: 132px 0px 0px;
+    padding: 102px 0px 0px;
     font-size: 60px;
     line-height: 40.2px;
     font-weight: 800;
     font-family: Spartan, sans-serif;
     letter-spacing: 1px;
-    color: rgb(245, 188, 99);
+    color: #111827;
     @media(max-width: 600px){
       font-size:30px;
       padding: 62px 0px 0px;
@@ -71,9 +71,10 @@ const Header = styled.div`
     line-height: 40px;
     font-weight: 500;
     font-family: Spartan, sans-serif;
-    letter-spacing: normal;
-    color: rgb(158, 154, 154);
+    letter-spacing: 0;
+    color: #6B7280;
     text-align: start;
+    text-transform: none;
     max-width: 896px;
     @media(max-width: 600px){
       font-size:18px;
@@ -81,10 +82,10 @@ const Header = styled.div`
   }
 `;
 const Wrapper = styled.div`
-  padding: 42px 0px 48px;
+  padding: 0px 0px 48px;
   color: rgb(38, 37, 37);
-  background-color: rgb(38, 37, 37);
-  margin: 31px 0px 90px;
+  background-color: #EFEFEF;
+  margin: 160px 0px 90px;
   font-size: 14px;
   line-height: 24.5px;
   font-weight: 400;
@@ -113,7 +114,7 @@ const Item = styled.div`
   letter-spacing: normal;
   padding: 0px;
   max-width: 342px;
-  background-color: rgb(76, 75, 75);
+  background-color: #fff;
   display: flex;
   align-items: flex-end;
   transition: 0.3s ease;
@@ -123,7 +124,7 @@ const Item = styled.div`
   .text {
     height: 67px;
     width: 182px;
-    background: #262525;
+    background: #F8BB5B;
     color: #fff;
     font-size: 20px;
     display: flex;
@@ -134,7 +135,7 @@ const Item = styled.div`
   .desc {
     width: 100%;
     height: 105px;
-    background: #3a3939;
+    background: #111827;
     color: #fff;
     font-size: 13px;
     display: flex;

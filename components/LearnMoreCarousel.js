@@ -39,7 +39,7 @@ const LearnMoreCarousel = () => {
   return (
     <Wrapper>
       <section className='section absolute'>
-        <h3>Learn More</h3>
+        <h3>Helpful Resources</h3>
 
         <Slider {...settings} className='slider'>
           <div className='wrapper'>
@@ -159,9 +159,13 @@ const Wrapper = styled.section`
   background-color: #ffe8b9;
   min-height: 473px;
   position: relative;
-  margin-top: 300px;
+  margin-top: 400px;
   @media (max-width: 600px) {
     margin-top: 250px;
+  }
+  .h3 {
+    font-size: 40px;
+    color: #111827;
   }
   .section {
     width: 90vw;
@@ -191,7 +195,7 @@ const Wrapper = styled.section`
   }
   .slider {
     .wrapper {
-      width: 95%;
+      width: 100%;
       background-color: #fff;
       max-width: 378px;
       border-radius: 10px;
@@ -226,7 +230,7 @@ const Wrapper = styled.section`
         img {
           height: 36px;
           width: 36px;
-          object-fit: cover;
+          object-fit: none;
         }
       }
       .right {
@@ -243,8 +247,8 @@ const Wrapper = styled.section`
   }
 
   .slick-arrow {
-    position: absolute;
-    top: -17%;
+    // position: absolute;
+    // top: -17%;
     height: 46px;
     width: 46px;
     border-radius: 50%;
@@ -260,7 +264,7 @@ const Wrapper = styled.section`
     }
   }
   .slick-prev {
-    left: 65%;
+    // left: 65%;
     @media (max-width: 900px) {
       left: 40%;
       transform: translateX(-40%);
@@ -275,7 +279,7 @@ const Wrapper = styled.section`
     }
   }
   .slick-next {
-    left: 72%;
+    left: 96.3%;
     @media (max-width: 900px) {
       left: 60%;
       transform: translateX(-60%);

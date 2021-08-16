@@ -149,27 +149,26 @@ const VirtualSettings2 = () => {
 };
 const Header = styled.div`
   color: #fff;
-  max-width: 970px;
-  
   h3 {
     margin-bottom: 8px;
-    font-size: 34px;
+    font-size: 60px;
     line-height: 44.2px;
     font-weight: 600;
     font-family: Spartan, sans-serif;
-    letter-spacing: 1px;
-    color: rgb(245, 188, 99);
+    letter-spacing: -3px;
+    color: #111827;
     text-align: start;
   }
   .title-desc {
+    max-width: 900px;
     padding: 0px;
-    margin: 0px 0px 20px;
+    margin: 20px 0px 40px;
     font-size: 20px;
     line-height: 35px;
     font-weight: 300;
     font-family: Spartan, sans-serif;
     letter-spacing: normal;
-    color: rgb(255, 255, 255);
+    color: #6B7280;
   }
 `;
 const Wrapper = styled.div`
@@ -178,9 +177,9 @@ const Wrapper = styled.div`
       display: none !important;
     }
   }
-  background-color: rgb(38, 37, 37);
+  background-color: #EFEFEF;
   padding: 80px 0px;
-  margin: 0px;
+  margin: 160px 0px 0px;
   font-size: 14px;
   .icon {
     height: 42px;
