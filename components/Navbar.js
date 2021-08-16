@@ -14,7 +14,10 @@ const Navbar = () => {
         <nav>
           <div className='logo'>
             <Link href='/' passHref>
-              <Image src={fullogo} alt='aaa' width="250" height="50"/>
+              <div className="logo-cont">
+                <Image src= {logo} alt='aaa'></Image>
+                <div>teliportme</div>
+              </div>
             </Link>
           </div>
           <div className='nav-links'>
@@ -126,7 +129,19 @@ const Wrapper = styled.nav`
       z-index: 9;
       cursor: pointer;
       img {
-        max-width: 250px;
+        // max-width: 250px;
+      }
+    }
+    .logo-cont {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      div {
+        margin-top: auto;
+        font-size: 22px;
+        font-weight: 800;
+        text-transform: uppercase;
       }
     }
     ul {
