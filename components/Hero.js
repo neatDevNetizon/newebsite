@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <Wrapper>
       <div className='bg'>
-        <div className='curve'></div>
+        {/* <div className='curve'></div> */}
         <Navbar />
         <HeroSection className='section'>
           <p className='create'></p>
@@ -33,8 +33,8 @@ const Wrapper = styled.div`
   }
 
   .bg {
-    height: 95vh;
-    background: url('images/bg.png');
+    height: 75vh;
+    // background: url('images/bg.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: right;
@@ -59,17 +59,11 @@ const Wrapper = styled.div`
       right: 0;
       bottom: 0;
       background: linear-gradient(
-        90deg,
-        rgba(254, 243, 216, 1) 0%,
-        rgba(254, 243, 216, 0.9164040616246498) 48%,
-        rgba(254, 243, 216, 0.5) 100%
+        to right,
+        rgba(255, 214, 117, 0.3) 0%,
+        rgba(255, 214, 117, 0.1) 30%,
+        rgba(255, 214, 117, 0.6) 100%
       );
-      // background: linear-gradient(
-      //     to right,
-      //     // rgba(254, 243, 216, 1),
-      //     #fef3d8,
-      //     rgba(235, 204, 162, 0.5)
-      // );
       z-index: 1;
     }
   }
@@ -205,7 +199,7 @@ const HeroSection = styled.div`
       }
     }
     .trial-btn {
-      background-color: #33b864;
+      background-color: #3AC035;
       width: 262px;
       height: 56px;
       font-weight: 700;

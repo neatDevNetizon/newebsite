@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { GoThreeBars } from 'react-icons/go';
 import { GrFormClose } from 'react-icons/gr';
 import logo from './../images/logo.png';
+import fullogo from './../images/fullogo.png';
 const Navbar = () => {
   const [show, setShow] = useState(false);
   return (
@@ -13,7 +14,7 @@ const Navbar = () => {
         <nav>
           <div className='logo'>
             <Link href='/' passHref>
-              <Image src={logo} alt='' />
+              <Image src={fullogo} alt='aaa' />
             </Link>
           </div>
           <div className='nav-links'>
@@ -199,6 +200,9 @@ const Wrapper = styled.nav`
       }
     }
   }
+`;
+const Text = styled.div`
+  font-size: 26px;
 `;
 const MobileNav = styled.nav`
   .mobile-wrapper {
