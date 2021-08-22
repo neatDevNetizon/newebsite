@@ -53,7 +53,9 @@ const WhyTeleport = () => {
           </SingleItem>
         </ColumnLeft>
         <ColumnRight>
-          <Image src={Image1} alt='Image 1' />
+          <div>
+            <Image src={Image1} alt='Image 1' />
+          </div>
         </ColumnRight>
       </Body>
     </Wrapper>
@@ -185,5 +187,13 @@ const SingleItem = styled.div`
     }
   }
 `;
-const ColumnRight = styled.div``;
+const ColumnRight = styled.div`
+  div {
+    height: calc(100% - 5px);
+  }
+  .platform-img {
+    height: 100%;
+    object-fit:
+  }
+`;
 export default WhyTeleport;

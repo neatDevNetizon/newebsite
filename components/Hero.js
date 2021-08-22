@@ -91,7 +91,7 @@ const HeroSection = styled.div`
   z-index: 10;
   width: 90vw;
 
-  margin-top: -3rem;
+  margin-top: -1rem;
   position: relative;
   @media (max-width: 799px) {
     margin-top: 0rem;

@@ -160,10 +160,10 @@ const Header = styled.div`
     text-align: start;
   }
   .title-desc {
-    max-width: 900px;
+    max-width: 1050px;
     padding: 0px;
     margin: 20px 0px 40px;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 35px;
     font-weight: 300;
     font-family: Spartan, sans-serif;

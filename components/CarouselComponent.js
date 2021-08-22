@@ -134,7 +134,7 @@ const CarouselComponent = () => {
 };
 
 const CarouselWrapper = styled.div`
-  padding: 8rem 2rem;
+  padding: 8rem 0rem;
   position: relative;
   .container {
     display: grid !important;

@@ -8,7 +8,7 @@ const BuildScalable = () => {
     <Wrapper className='section'>
       <Header>
         <div className="platform-icon">
-          <Image src={Icon1} alt=""/>
+          {"<"}
         </div>
         <h3 className="plat-title">One Unified Platform </h3>
         <p className='title-desc'>
@@ -53,7 +53,9 @@ const BuildScalable = () => {
           </SingleItem>
         </ColumnLeft>
         <ColumnRight>
-          <Image src={Image1} alt='Image 1' />
+          <div>
+            <Image src={Image1} alt='Image 1' />
+          </div>
         </ColumnRight>
       </Body>
     </Wrapper>
@@ -105,6 +107,10 @@ const Header = styled.div`
   }
   .platform-icon {
     padding: 200px 0px 0px;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: Spartan, sans-serif;
+    width: 50%;
   }
   .plat-title {
     font-weight: 800;
@@ -185,5 +191,13 @@ const SingleItem = styled.div`
     }
   }
 `;
-const ColumnRight = styled.div``;
+const ColumnRight = styled.div`
+  div {
+    height: calc(100% - 5px);
+  }
+  .platform-img {
+    height: 100%;
+    object-fit:
+  }
+`;
 export default BuildScalable;

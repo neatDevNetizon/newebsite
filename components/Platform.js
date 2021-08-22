@@ -53,7 +53,9 @@ const Platform = () => {
           </SingleItem>
         </ColumnLeft>
         <ColumnRight>
-          <Image src={Image1} alt='Image 1' />
+          <div>
+            <Image src={Image1} alt='Image 1' className="platform-img" />
+          </div>
         </ColumnRight>
       </Body>
     </Wrapper>
@@ -104,7 +106,7 @@ const Header = styled.div`
     }
   }
   .platform-icon {
-    padding: 200px 0px 0px;
+    padding: 80px 0px 0px;
   }
   .plat-title {
     font-weight: 800;
@@ -166,12 +168,14 @@ const SingleItem = styled.div`
   }
   p {
     padding: 3px 0px 0px;
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: medium;
     margin: 0px;
-    line-height: 21px;
+    line-height: 20px;
     font-weight: 500;
     letter-spacing: normal;
-    color: rgba(107, 114, 128, 0.8);
+    color: rgba(107, 114, 128);
+    opacity: 0.8;
     text-align: start;
     @media (max-width: 600px) {
       font-size: 16px;
@@ -185,5 +189,13 @@ const SingleItem = styled.div`
     }
   }
 `;
-const ColumnRight = styled.div``;
+const ColumnRight = styled.div`
+  div {
+    height: calc(100% - 5px);
+  }
+  .platform-img {
+    height: 100%;
+    object-fit:
+  }
+`;
 export default Platform;

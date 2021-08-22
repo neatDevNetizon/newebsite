@@ -228,11 +228,11 @@ const Wrapper = styled.section`
     z-index: 99;
 
     @media (min-width: 1080px) {
-      position: absolute;
-      top: -110px;
+      // position: absolute;
+      // top: -110px;
     }
     @media (max-width: 1079px) {
-      position: absolute;
+      // position: absolute;
       top: 30%;
       background-color: rgba(255, 255, 255, 0.5);
       height: 30px;
@@ -244,12 +244,12 @@ const Wrapper = styled.section`
   }
   .slick-prev {
     @media (min-width: 1080px) {
-      left: 86%;
-      transform: translateX(-40%);
+      // left: 86%;
+      // transform: translateX(-40%);
     }
-    @media (max-width: 650px) {
-      margin-left: 10px;
-    }
+    // @media (max-width: 650px) {
+    //   margin-left: 10px;
+    // }
 
     :before {
       content: url('images/left-arrow.png');
@@ -260,9 +260,12 @@ const Wrapper = styled.section`
     }
   }
   .slick-next {
-    @media (min-width: 1080px) {
-      left: 93%;
-      transform: translateX(-50%);
+    // left: 96.6%;
+    margin-right: 0px;
+    @media (min-width: 1280px) {
+      // left: 93%;
+      margin-right: 18px;
+      // transform: translateX(-50%);
     }
     @media (max-width: 650px) {
       margin-right: 10px;
