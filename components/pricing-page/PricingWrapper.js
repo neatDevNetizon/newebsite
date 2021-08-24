@@ -1,26 +1,12 @@
 import React, {useEffect} from 'react';
 import styled from 'styled-components';
+import ReactTooltip from 'react-tooltip';
 import check from './../../images/check.png';
 import uncheck from './../../images/uncheck1.png';
 import uncheck2 from './../../images/uncheck.png';
 import additional from '../../images/addtional.png';
 import Image from 'next/image';
 const PricingWrapper = () => {
-  useEffect(() => {
-    const borderedTh = document.querySelector('table tr th:nth-child(4)');
-    borderedTh.style.border = "3px solid #f5bc63";
-    borderedTh.style.borderBottom = 'none';
-    borderedTh.style.borderTopRightRadius = '5px';
-    borderedTh.style.borderTopLeftRadius = '5px';
-    const borderedLastTd = document.querySelector('table tr:last-child td:nth-child(4)');
-    borderedLastTd.style.borderBottom = "3px solid #f5bc63";
-    const borderedTds = document.querySelectorAll('table tr td:nth-child(4)');
-    borderedTds.forEach((e)=>{
-      e.style.borderRight = "3px solid #f5bc63";
-      e.style.borderLeft = "3px solid #f5bc63";
-    });
-    
-  },[])
   return (
     <Wrapper>
       <h3 className='heading'>Take A Look On Plans Comparison</h3>
@@ -98,28 +84,52 @@ const PricingWrapper = () => {
         </tr>
 
         <tr>
-          <td className='left'>Maximum Panorama Size</td>
+          <td className='left'>
+            <a data-tip data-for='tooltip-1'>Maximum Panorama Size</a>
+            <ReactTooltip id='tooltip-1' aria-haspopup='true' place="bottom">
+              <p>Maximum Panorama Size</p>
+              <label>You can customize this</label>
+            </ReactTooltip>
+          </td>
           <td>20mb</td>
           <td>30mb</td>
           <td className='white'>50mb</td>
           <td>100mb</td>
         </tr>
         <tr>
-          <td className='left'>iOS and Android app</td>
+          <td className='left'>
+            <a data-tip data-for='tooltip-2'>iOS and Android app</a>
+            <ReactTooltip id='tooltip-2' aria-haspopup='true' place="bottom">
+              <p>iOS and Android app</p>
+              <label>You can customize this</label>
+            </ReactTooltip>
+          </td>
           <td>Free version</td>
           <td>PRO versions</td>
           <td className='white'>PRO versions</td>
           <td>PRO versions</td>
         </tr>
         <tr>
-          <td className='left'>Embed Functionality</td>
+          <td className='left'>
+            <a data-tip data-for='tooltip-3'>Embed Functionality</a>
+            <ReactTooltip id='tooltip-3' aria-haspopup='true' place="bottom">
+              <p>Embed Functionality</p>
+              <label>You can customize this</label>
+            </ReactTooltip>
+          </td>
           <td>Unlimited</td>
           <td>Unlimited</td>
           <td className='white'>Unlimited</td>
           <td>Unlimited</td>
         </tr>
         <tr>
-          <td className='left'>360 Camera Integration</td>
+          <td className='left'>
+            <a data-tip data-for='tooltip-4'>360 Camera Integration</a>
+            <ReactTooltip id='tooltip-4' aria-haspopup='true' place="bottom">
+              <p>360 Camera Integration</p>
+              <label>You can customize this</label>
+            </ReactTooltip>
+          </td>
           <td>
             <Image src={check} alt='' />
           </td>
@@ -134,14 +144,26 @@ const PricingWrapper = () => {
           </td>
         </tr>
         <tr>
-          <td className='left'>Video Resolution</td>
+          <td className='left'>
+            <a data-tip data-for='tooltip-5'>Video Resolution</a>
+            <ReactTooltip id='tooltip-5' aria-haspopup='true' place="bottom">
+              <p>Video Resolution</p>
+              <label>You can customize this</label>
+            </ReactTooltip>
+          </td>
           <td>4K</td>
           <td>8K</td>
           <td className='white'>16K</td>
           <td>Upto 32K</td>
         </tr>
         <tr>
-          <td className='left'>Custom Branding</td>
+          <td className='left'>
+            <a data-tip data-for='tooltip-6'>Custom Branding</a>
+            <ReactTooltip id='tooltip-6' aria-haspopup='true' place="bottom">
+              <p>Custom Branding</p>
+              <label>You can customize this</label>
+            </ReactTooltip>
+          </td>
           <td>
             <Image src={uncheck} alt='' />
           </td>
@@ -150,7 +172,13 @@ const PricingWrapper = () => {
           <td>50 Brands</td>
         </tr>
         <tr>
-          <td className='left'>Live Tours / Collections</td>
+          <td className='left'>
+            <a data-tip data-for='tooltip-7'>Live Tours / Collections</a>
+            <ReactTooltip id='tooltip-7' aria-haspopup='true' place="bottom">
+              <p>Live Tours / Collections</p>
+              <label>You can customize this</label>
+            </ReactTooltip>
+          </td>
           <td>
             <Image src={uncheck} alt='' />
           </td>
@@ -160,7 +188,13 @@ const PricingWrapper = () => {
         </tr>
 
         <tr>
-          <td className='left'>Private and unlisted</td>
+          <td className='left'>
+            <a data-tip data-for='tooltip-8'>Private and unlisted</a>
+            <ReactTooltip id='tooltip-8' aria-haspopup='true' place="bottom">
+              <p>Private and unlisted</p>
+              <label>You can customize this</label>
+            </ReactTooltip>
+          </td>
           <td>
             <Image src={uncheck} alt='' />
           </td>
@@ -175,7 +209,13 @@ const PricingWrapper = () => {
           </td>
         </tr>
         <tr>
-          <td className='left'>Number of Users</td>
+          <td className='left'>
+            <a data-tip data-for='tooltip-9'>Number of Users</a>
+            <ReactTooltip id='tooltip-9' aria-haspopup='true' place="bottom">
+              <p>Number of Users</p>
+              <label>You can customize this</label>
+            </ReactTooltip>
+          </td>
           <td>
             <Image src={uncheck} alt='' />
           </td>
@@ -187,7 +227,13 @@ const PricingWrapper = () => {
         </tr>
 
         <tr>
-          <td className='left'>Basic API integration</td>
+          <td className='left'>
+            <a data-tip data-for='tooltip-10'>Basic API integration</a>
+            <ReactTooltip id='tooltip-10' aria-haspopup='true' place="bottom">
+              <p>Basic API integration</p>
+              <label>You can customize this</label>
+            </ReactTooltip>
+          </td>
           <td>
             <Image src={uncheck} alt='' />
           </td>
@@ -202,7 +248,13 @@ const PricingWrapper = () => {
           </td>
         </tr>
         <tr>
-          <td className='left'>Custom domain with SSL</td>
+          <td className='left'>
+            <a data-tip data-for='tooltip-11'>Custom domain with SSL</a>
+            <ReactTooltip id='tooltip-11' aria-haspopup='true' place="bottom">
+              <p>Custom domain with SSL</p>
+              <label>You can customize this</label>
+            </ReactTooltip>
+          </td>
           <td>
             <Image src={uncheck} alt='' />
           </td>
@@ -217,7 +269,13 @@ const PricingWrapper = () => {
           </td>
         </tr>
         <tr>
-          <td className='left'>Detailed Analytics</td>
+          <td className='left'>
+            <a data-tip data-for='tooltip-12'>Detailed Analytics</a>
+            <ReactTooltip id='tooltip-12' aria-haspopup='true' place="bottom">
+              <p>Detailed Analytics</p>
+              <label>You can customize this</label>
+            </ReactTooltip>
+          </td>
           <td>
             <Image src={uncheck} alt='' />
           </td>
@@ -286,7 +344,23 @@ const Wrapper = styled.div`
     td {
       // border-bottom: 1px solid #060606;
     }
-  }  
+  }
+  tr th:nth-child(4){
+    border: 3px solid #f5bc63;
+    border-bottom: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  tr td:nth-child(4) {
+    border-left: 3px solid #f5bc63;
+    border-right: 3px solid #f5bc63;
+  }
+  tr:last-child td:nth-child(4) {
+    border-bottom: 3px solid #f5bc63;
+  }
+  tr .left:hover {
+    cursor: pointer;
+  }
   tr:not(:nth-child(2)){
     transition: all 0.3s ease;
     &:hover {
