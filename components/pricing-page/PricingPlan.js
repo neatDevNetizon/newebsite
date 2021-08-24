@@ -203,7 +203,7 @@ const Wrapper = styled.section`
     }
   }
   .single {
-    height: 471px;
+    height: 491px;
     text-align: center;
     border-radius: 15px;
     box-shadow: var(--shadow-3);
@@ -230,7 +230,7 @@ const Wrapper = styled.section`
       height: 24px;
     }
     .plan-desc {
-      margin: 5px 0px;
+      margin: 10px 0px;
       label {
         margin-left: 5px;
       }
@@ -297,7 +297,7 @@ const Wrapper = styled.section`
   .plan-customBtn {
     height: 46px;
     width: 164px;
-    margin-top: 50px;
+    margin-top: 70px;
     background-color: #000;
     color: #fff;
     box-shadow: none;
