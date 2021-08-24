@@ -286,8 +286,8 @@ const Wrapper = styled.div`
     td {
       // border-bottom: 1px solid #060606;
     }
-  }
-  tr {
+  }  
+  tr:not(:nth-child(2)){
     transition: all 0.3s ease;
     &:hover {
       background-color: #fff;
