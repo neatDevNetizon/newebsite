@@ -355,13 +355,11 @@ const Wrapper = styled.div`
     border-left: 3px solid #f5bc63;
     border-right: 3px solid #f5bc63;
   }
-  tr:last-child td:nth-child(4) {
-    border-bottom: 3px solid #f5bc63;
-  }
+  
   tr .left:hover {
     cursor: pointer;
   }
-  tr:not(:nth-child(2)){
+  tr:not(:nth-child(2)):not(:last-child){
     transition: all 0.3s ease;
     &:hover {
       background-color: #fff;
@@ -374,6 +372,20 @@ const Wrapper = styled.div`
         border: none !important;
       }
     }
+  }
+  tr:last-child{
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #fff;
+      color: #000;
+      .white {
+        color: #000;
+        border: none !important;
+      }
+    }
+  }
+  tr:last-child td:nth-child(4) {
+    border-bottom: 3px solid #f5bc63;
   }
   th {
     text-align: left;
