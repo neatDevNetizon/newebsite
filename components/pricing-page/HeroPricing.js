@@ -44,7 +44,7 @@ const HeroSection = styled.div`
     }
   }
   .hero-title {
-    font-size: 60px;
+    font-size: 48px;
     text-transform: normal;
     font-weight: bold;
     letter-spacing: -1px;

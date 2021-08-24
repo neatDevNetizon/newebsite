@@ -376,7 +376,6 @@ const Wrapper = styled.div`
   tr:last-child{
     transition: all 0.3s ease;
     &:hover {
-      background-color: #fff;
       color: #000;
       .white {
         color: #000;
@@ -476,19 +475,67 @@ const Wrapper = styled.div`
   .plan-btn {
     height: 46px;
     width: 164px;
-    background-color: transparent;
+    background-color: #fff;
     color: #222;
     box-shadow: none;
     border: 1px solid #707070;
     font-size: 14px;
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transition: 0.3s ease;
+    &:hover {
+      :after {
+        width: 100%;
+        content: '';
+        height: 3px;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        background-color: #707070;
+      }
+    }
+    @media (max-width: 600px) {
+      width: 160px;
+      height: 46px;
+    }
   }
   .recomand-plan {
     background: #33b864;
     color: #fff;
+    &:hover {
+      :after {
+        width: 100%;
+        content: '';
+        height: 3px;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        background-color: #fff;
+      }
+    }
+    @media (max-width: 600px) {
+      width: 160px;
+      height: 46px;
+    }
   }
   .black-btn {
     background: #000000;
     color: #fff;
+    &:hover {
+      :after {
+        width: 100%;
+        content: '';
+        height: 3px;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        background-color:  #fff;
+      }
+    }
+    @media (max-width: 600px) {
+      width: 160px;
+      height: 46px;
+    }
   }
 `;
 export default PricingWrapper;
