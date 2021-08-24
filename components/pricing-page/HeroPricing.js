@@ -19,7 +19,7 @@ const Wrapper = styled.section``;
 
 const HeroSection = styled.div`
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 
   max-width: 1170px;
   text-align: center;
