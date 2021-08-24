@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import checked from '../../images/check.png';
+import Image from 'next/image';
 
 import PricingPlanCarousel from './PricingPlanCarousel';
 const PricingPlan = () => {
   const [yearly, setYearly] = useState(false);
-
   return (
     <>
       <Wrapper className='section'>
@@ -30,24 +31,66 @@ const PricingPlan = () => {
           <div className='single'>
             <h4>Community</h4>
             <h3>Free</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              eleifend ultricies mollis. Suspendisse potenti.
-            </p>
-
-            <p className='time'>All Time</p>
+            <div className="plan-pointer">
+            <label className='time'></label>
+            </div>
+            <div className="plan-desc">
+              <Image src={checked} alt="checked" className='checked'/>
+              <label>
+                Lorem ipsum dolor sit amet,
+              </label>
+            </div>
+            <div className="plan-desc">
+              <Image src={checked} alt="checked" className='checked'/>
+              <label>
+                consectetur adipiscing elit. 
+              </label>
+            </div>
+            <div className="plan-desc">
+              <Image src={checked} alt="checked" className='checked'/>
+              <label>
+                In eleifend ultricies mollis.
+              </label>
+            </div>
+            <div className="plan-desc">
+              <Image src={checked} alt="checked" className='checked'/>
+              <label>
+                Suspendisse potenti.
+              </label>
+            </div>
             <button className='btn plan-btn'>Start Free Trial</button>
           </div>
 
           <div className='single'>
             <h4>Essential</h4>
             <h3>{yearly ? '$250' : '$30'}</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              eleifend ultricies mollis. Suspendisse potenti.
-            </p>
-
-            <p className='time'>{yearly ? 'Per Year' : 'Per Months'}</p>
+            <div className="plan-pointer">
+              <label className='time'>{yearly ? 'Per Year' : 'Per Months'}</label>
+            </div>
+            <div className="plan-desc">
+              <Image src={checked} alt="checked" className='checked'/>
+              <label>
+                Lorem ipsum dolor sit amet,
+              </label>
+            </div>
+            <div className="plan-desc">
+              <Image src={checked} alt="checked" className='checked'/>
+              <label>
+                consectetur adipiscing elit. 
+              </label>
+            </div>
+            <div className="plan-desc">
+              <Image src={checked} alt="checked" className='checked'/>
+              <label>
+                In eleifend ultricies mollis.
+              </label>
+            </div>
+            <div className="plan-desc">
+              <Image src={checked} alt="checked" className='checked'/>
+              <label>
+                Suspendisse potenti.
+              </label>
+            </div>
             <button className='btn plan-btn'>Start Free Trial</button>
           </div>
 
@@ -55,12 +98,33 @@ const PricingPlan = () => {
             <div className='recommended-btn'>Recommended</div>
             <h4>Business</h4>
             <h3>{yearly ? '$350' : '$50'}</h3>
-            <p className='time'>{yearly ? 'Per Year' : 'Per Months'}</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              eleifend ultricies mollis. Suspendisse potenti.
-            </p>
-
+            <div className="plan-pointer">
+              <label className='time'>{yearly ? 'Per Year' : 'Per Months'}</label>
+            </div>
+            <div className="plan-desc">
+              <Image src={checked} alt="checked" className='checked'/>
+              <label>
+                Lorem ipsum dolor sit amet,
+              </label>
+            </div>
+            <div className="plan-desc">
+              <Image src={checked} alt="checked" className='checked'/>
+              <label>
+                consectetur adipiscing elit. 
+              </label>
+            </div>
+            <div className="plan-desc">
+              <Image src={checked} alt="checked" className='checked'/>
+              <label>
+                In eleifend ultricies mollis.
+              </label>
+            </div>
+            <div className="plan-desc">
+              <Image src={checked} alt="checked" className='checked'/>
+              <label>
+                Suspendisse potenti.
+              </label>
+            </div>
             <button className='btn plan-btn recomand-plan'>
               Start Free Trial
             </button>
@@ -69,13 +133,15 @@ const PricingPlan = () => {
           <div className='single'>
             <h4>Enterprise</h4>
             <h3>Custom</h3>
+            <div className="plan-pointer">
+              <label className='time'></label>
+            </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
               eleifend ultricies mollis. Suspendisse potenti.
             </p>
 
-            <p className='time'>Contact Us</p>
-            <button className='btn plan-btn'>Start Free Trial</button>
+            <button className='btn plan-customBtn'>Contact Us</button>
           </div>
         </div>
       </Wrapper>
@@ -101,7 +167,9 @@ const Wrapper = styled.section`
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 332px;
+    max-width: 406px;
+    background-color: rgba(255, 185, 80, 0.12);
+    padding: 20px 40px 20px 40px;
   }
   .body2 {
     margin: 0;
@@ -135,17 +203,37 @@ const Wrapper = styled.section`
     }
   }
   .single {
+    height: 471px;
     text-align: center;
-    height: 428px;
     border-radius: 15px;
     box-shadow: var(--shadow-3);
     width: 276px;
-    padding: 3rem 1rem;
+    padding: 3rem 2rem;
 
     h4 {
-      margin-bottom: 30px;
+      
       color: #fc9e0d;
-      font-size: 20px;
+      font-size: 26px;
+    }
+    h3 {
+      font-size: 34px;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      label {
+        font-size: 12px;
+      }
+    }
+    img {
+      width: 24px;
+      height: 24px;
+    }
+    .plan-desc {
+      margin: 5px 0px;
+      label {
+        margin-left: 5px;
+      }
     }
 
     p {
@@ -156,9 +244,15 @@ const Wrapper = styled.section`
       margin-bottom: 30px;
       line-height: 21px;
     }
+    .plan-pointer {
+      width: 100%;
+      min-height: 40px;
+      text-align: center;
+      display: block;
+    }
   }
   .recommended {
-    height: 468px;
+    // height: 468px;
     background-color: #000000;
     border: 1px solid #fad096;
     color: #fff;
@@ -166,13 +260,14 @@ const Wrapper = styled.section`
       color: #fff;
     }
     @media (max-width: 955px) {
-      margin-top: 3.5rem;
+      // margin-top: 3.5rem;
     }
   }
   .recommended-btn {
     height: 47px;
-    width: 181px;
-    background-color: #f5bc63;
+    width: 171px;
+    background-color: #000;
+    border: 1px solid #fad096;
     color: #fff;
     font-size: 14px;
     display: flex;
@@ -180,26 +275,40 @@ const Wrapper = styled.section`
     align-items: center;
     justify-content: center;
     margin-top: -6rem;
-    margin-bottom: 4rem;
-    margin-left: 2rem;
+    margin-bottom: 3rem;
+    // margin-left: 2rem;
     border-radius: 10px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .plan-btn {
     height: 46px;
     width: 164px;
+    margin-top: 40px;
     background-color: transparent;
     color: #222;
     box-shadow: none;
     border: 1px solid #707070;
     font-size: 14px;
   }
+  .plan-customBtn {
+    height: 46px;
+    width: 164px;
+    margin-top: 50px;
+    background-color: #000;
+    color: #fff;
+    box-shadow: none;
+    border: 1px solid #707070;
+    font-size: 14px;
+    // position: absolute;
+  }
   .recomand-plan {
     background: #33b864;
     color: #fff;
-    margin-top: 1.5rem;
+    margin-top: 40px;
   }
   /* switch css  */
   .switch {

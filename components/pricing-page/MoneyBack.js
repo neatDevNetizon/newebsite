@@ -20,7 +20,7 @@ const MoneyBack = () => {
   );
 };
 const Wrapper = styled.div`
-  max-width: 648px;
+  max-width: 700px;
   margin: 0 auto;
   margin-bottom: 100px;
   display: flex;
@@ -42,8 +42,12 @@ const Wrapper = styled.div`
   }
 `;
 const RightColumn = styled.div`
+  width: 530px;
+  letter-spacing: 0px;
+  font-family: Spartan, sans-serif;
   h4 {
     margin: 0;
+    font-size: 24px;
     @media (max-width: 600px) {
       margin-bottom: 5px;
     }

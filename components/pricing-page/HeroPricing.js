@@ -5,12 +5,12 @@ const HeroPricing = () => {
   return (
     <Wrapper className='section'>
       <HeroSection>
-        <h2>Pricing custom–tailored for every stage of your business.</h2>
-        <p className='trust hide-mobile'>
+        <p className="hero-title">Tailored for every stage of business.</p>
+        {/* <p className='trust hide-mobile'>
           Capture, build and analyze virtual tours using TeliportMe’s powerful
           software solutions and API’s designed to help you grow your revenue.
           Trusted by <span> 15 Million</span> creators and <span> 20,000+</span>
-        </p>
+        </p> */}
       </HeroSection>
     </Wrapper>
   );
@@ -21,7 +21,7 @@ const HeroSection = styled.div`
   margin: 0 auto;
   margin-bottom: 100px;
 
-  max-width: 974px;
+  max-width: 1170px;
   text-align: center;
   @media (max-width: 600px) {
     text-align: left;
@@ -42,6 +42,13 @@ const HeroSection = styled.div`
       font-weight: 700;
       margin: 0 2px;
     }
+  }
+  .hero-title {
+    font-size: 60px;
+    text-transform: normal;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-family: Spartan, sans-serif;
   }
 `;
 export default HeroPricing;

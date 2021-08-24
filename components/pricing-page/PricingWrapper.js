@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import check from './../../images/check.png';
 import uncheck from './../../images/uncheck1.png';
@@ -6,6 +6,21 @@ import uncheck2 from './../../images/uncheck.png';
 import additional from '../../images/addtional.png';
 import Image from 'next/image';
 const PricingWrapper = () => {
+  useEffect(() => {
+    const borderedTh = document.querySelector('table tr th:nth-child(4)');
+    borderedTh.style.border = "3px solid #f5bc63";
+    borderedTh.style.borderBottom = 'none';
+    borderedTh.style.borderTopRightRadius = '5px';
+    borderedTh.style.borderTopLeftRadius = '5px';
+    const borderedLastTd = document.querySelector('table tr:last-child td:nth-child(4)');
+    borderedLastTd.style.borderBottom = "3px solid #f5bc63";
+    const borderedTds = document.querySelectorAll('table tr td:nth-child(4)');
+    borderedTds.forEach((e)=>{
+      e.style.borderRight = "3px solid #f5bc63";
+      e.style.borderLeft = "3px solid #f5bc63";
+    });
+    
+  },[])
   return (
     <Wrapper>
       <h3 className='heading'>Take A Look On Plans Comparison</h3>
@@ -268,6 +283,9 @@ const Wrapper = styled.div`
     width: 100%;
     border-collapse: separate;
     border-spacing: 15px 0;
+    td {
+      // border-bottom: 1px solid #060606;
+    }
   }
   tr {
     transition: all 0.3s ease;
@@ -276,6 +294,10 @@ const Wrapper = styled.div`
       color: #000;
       .white {
         color: #000;
+        border: none !important;
+      }
+      td:nth-child(4) {
+        border: none !important;
       }
     }
   }
@@ -328,19 +350,19 @@ const Wrapper = styled.div`
     position: relative;
     margin-top: -6rem;
     margin-left: -3rem;
-    ::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      right: 0%;
-      transform: translateY(-50%);
-      background-color: #262525;
-      height: 2px;
-      width: 56px;
-      @media (max-width: 1200px) {
-        background-color: transparent;
-      }
-    }
+    // ::before {
+    //   content: '';
+    //   position: absolute;
+    //   top: 50%;
+    //   right: 0%;
+    //   transform: translateY(-50%);
+    //   background-color: #262525;
+    //   height: 2px;
+    //   width: 56px;
+    //   @media (max-width: 1200px) {
+    //     background-color: transparent;
+    //   }
+    // }
     h3 {
       font-weight: 700;
       color: #262525;
