@@ -38,23 +38,23 @@ const Wrapper = styled.div`
   }
 
   .bg {
-    height: 75vh;
-    min-height: 620px;
+    // height: 75vh;
+    // min-height: 620px;
     // background: url('images/bg.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: right;
     position: relative;
     overflow: hidden;
-    @media (max-width: 800px) {
-      height: 80vh;
-    }
-    @media (max-width: 400px) {
-      height: 80vh;
-    }
-    @media (max-width: 330px) {
-      height: 80vh;
-    }
+    // @media (max-width: 800px) {
+    //   height: 80vh;
+    // }
+    // @media (max-width: 400px) {
+    //   height: 80vh;
+    // }
+    // @media (max-width: 330px) {
+    //   height: 80vh;
+    // }
     ::before {
       content: '';
       position: absolute;
@@ -101,30 +101,54 @@ const HeroSection = styled.div`
   .hero-contents {
     margin-top: 100px;
     display: flex;
+    flex-direction: row;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 0px;
+    }
   }
   .hero-contents div:first-child {
     width: 330px;
     height: 440px;
+    @media (max-width: 800px) {
+      width: 200px;
+      height: 250px;
+    }
   }
   .hero-desc {
-    padding: 5px 0px 0px 50px;
+    padding: 5px 0px 50px 50px;
+    @media (max-width: 600px) {
+      padding: 40px 0px 0px 20px;
+    }
     h3 {
       font-size: 36px;
       font-weight: 500;
       letter-spacing: 1px;
+      @media (max-width: 800px) {
+        font-size: 22px;
+      }
     }
     h2 {
       margin-top: 100px;
       font-size: 36px;
       font-weight: 800;
+      @media (max-width: 800px) {
+        font-size: 22px;
+        margin-top: 20px;
+      }
     }
     h5 {
       font-size: 22px;
       font-weight: normal;
+      @media (max-width: 800px) {
+        font-size: 18px;
+      }
     }
   }
   .manager {
     object-fit: cover;
+    
   }
   @media (max-width: 799px) {
     margin-top: 0rem;
