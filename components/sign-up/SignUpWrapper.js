@@ -252,6 +252,10 @@ const Navbar = styled.section`
       justify-content: center;
       align-items: center;
       gap: 0.5rem;
+      img {
+        width: 40px;
+        height:40px;
+      }
       div {
         margin-top: auto;
         font-size: 22px;
