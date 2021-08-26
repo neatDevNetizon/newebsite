@@ -100,6 +100,7 @@ const HeroSection = styled.div`
 
   .hero-contents {
     margin-top: 100px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     @media (max-width: 600px) {
