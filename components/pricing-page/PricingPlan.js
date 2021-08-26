@@ -210,11 +210,9 @@ const Wrapper = styled.section`
       display: none !important;
     }
   } */
-  /* @media (max-width: 600px) {
-    .hide-mobile {
-      display: none !important;
-    }
-  } */
+  @media (max-width: 600px) {
+    margin-bottom: 10px;
+  }
   .header {
     margin: 0 auto;
     display: flex;
@@ -224,6 +222,10 @@ const Wrapper = styled.section`
     max-width: 406px;
     background-color: rgba(255, 185, 80, 0.12);
     padding: 20px 40px 20px 40px;
+    @media (max-width: 600px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
   .body2 {
     margin: 0;

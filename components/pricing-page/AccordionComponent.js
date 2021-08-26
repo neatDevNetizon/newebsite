@@ -9,14 +9,14 @@ const AccordionComponent = ({ item }) => {
     <Wrapper bordering={show}>
       <div className='single'>
         <p className='heading'>
-          <span>{item.heading}</span>
-          <span className='icon' onClick={() => setShow(!show)}>
+          <div>{item.heading}</div>
+          <div className='icons' onClick={() => setShow(!show)}>
             {show ? (
-              <Image src={minus} alt='' />
+              <Image src={minus} alt='' className='icon' />
             ) : (
-              <Image src={plusIcon} alt='' />
+              <Image src={plusIcon} alt='' className='icon' />
             )}
-          </span>
+          </div>
         </p>
         {show && <p className='content'>{item.answer}</p>}
       </div>
@@ -29,12 +29,31 @@ const Wrapper = styled.div`
   }
   .heading {
     font-weight: ${props => props.bordering?"bold":"normal"};;
-    font-size: ${props => props.bordering?"18px":"16px"};
+    // font-size: ${props => props.bordering?"18px":"16px"};
+    font-size: 18px;
   }
   .content {
+    margin-top: 10px;
     font-size: 14px;
     font-family: Spartan, sans-serif;
     line-height: 22px;
+    @media(max-width: 600px) {
+      font-size: 11px;
+    }
+  }
+  .icons {
+    img {
+      max-width: 28px;
+      max-height: 28px;
+      min-width: 28px;
+      min-height: 28px;
+      @media(min-width: 600px) {
+        max-width: 32px;
+        max-height: 32px;
+        min-width: 32px;
+        min-height: 32px;
+      }
+    }
   }
 `;
 export default AccordionComponent;

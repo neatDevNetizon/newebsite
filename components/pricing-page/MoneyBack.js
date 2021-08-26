@@ -53,11 +53,15 @@ const RightColumn = styled.div`
     font-size: 24px;
     @media (max-width: 600px) {
       margin-bottom: 5px;
+      font-size: 18px;
     }
   }
   p {
     font-size: 13px;
     margin: 0;
+    @media(max-width: 600px) {
+      font-size: 12px;
+    }
   }
 `;
 

@@ -310,7 +310,7 @@ const PricingWrapper = () => {
 };
 const Wrapper = styled.div`
   width: 90vw;
-  margin: 0 auto;
+  margin: 150px auto;
   margin-bottom: 150px;
   max-width: 1251px;
   /* min-width: 1000px; */
@@ -321,6 +321,7 @@ const Wrapper = styled.div`
   }
   @media (max-width: 600px) {
     margin-bottom: 40px;
+    margin-top: 0px;
     padding: 0;
   }
   .white {

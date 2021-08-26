@@ -27,6 +27,26 @@ const Hero = () => {
               </h5>
             </div>
           </div>
+          <div className="mobile-hero">
+            <div className="hero-desc">
+              <h3>
+                “Microacquire Helps Startups Find Buyers. Simple As That. We’ll Help You Start Conversations That Lead To An Acquisition In Just 30 Days – For Free.“
+              </h3>
+              <div className="mobile-manager">
+                <div>
+                  <Image src={manager} className="manager"/>
+                </div>
+                <div>
+                  <h2>
+                    Vineet Devaiah
+                  </h2>
+                  <h5>
+                    CEO at TeliportMe  
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
         </HeroSection>
       </div>
     </Wrapper>
@@ -107,6 +127,27 @@ const HeroSection = styled.div`
       flex-direction: column;
       justify-content: center;
       margin-top: 0px;
+      display: none;
+    }
+  }
+  .mobile-hero {
+    display: none;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 0px;
+      display: block;
+    }
+    .mobile-manager {
+      display: flex;
+    }
+    .mobile-manager div:first-child {
+      width: 150px;
+      height: 180px;
+      margin-bottom: 50px;
+    }
+    .mobile-manager div:last-child {
+      margin-left: 20px;
     }
   }
   .hero-contents div:first-child {
@@ -120,14 +161,15 @@ const HeroSection = styled.div`
   .hero-desc {
     padding: 5px 0px 50px 50px;
     @media (max-width: 600px) {
-      padding: 40px 0px 0px 20px;
+      padding: 40px 0px 0px 0px;
     }
     h3 {
+      color: #262525;
       font-size: 36px;
       font-weight: 500;
       letter-spacing: 1px;
       @media (max-width: 800px) {
-        font-size: 22px;
+        font-size: 20px;
       }
     }
     h2 {

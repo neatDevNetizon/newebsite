@@ -19,12 +19,12 @@ const SignInWrapper = () => {
               </Link>
             </div>
           </div>
-
+{/* 
           <div className="btn-container mobile-signup">
             <Link href="sign-up" passHref>
               <button className="btn signup-btn">Go Sign Up</button>
             </Link>
-          </div>
+          </div> */}
 
           <div >
             <Link href="sign-up" passHref>
@@ -70,8 +70,7 @@ const Wrapper = styled.section`
   }
   .left {
     position: relative;
-    width: 95vw;
-    max-width: 480px;
+    width: 100%;
     margin: 0 auto;
     padding: 2rem 0;
   }
@@ -91,7 +90,7 @@ const Wrapper = styled.section`
       right: 0;
       left: 0;
       height: 100vh;
-      width: 100%;
+      width: 140%;
       background-color: #f9dd9e;
       opacity: 0.6;
     }

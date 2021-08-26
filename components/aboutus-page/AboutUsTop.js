@@ -7,9 +7,9 @@ const AboutUsTop = () => {
         <Wrapper className="section">
             <div className="image">
                 <Image src={aboutImg} alt="" />
-                <button className="btn about-btn">
+                {/* <button className="btn about-btn">
                     Start Trial And Request For Demo
-                </button>
+                </button> */}
             </div>
             <div className="container">
                 <div className="text">
@@ -41,7 +41,7 @@ const AboutUsTop = () => {
     );
 };
 const Wrapper = styled.div`
-    margin-top: 280px;
+    margin-top: 200px;
     display: grid;
     gap: 2rem;
     margin-bottom: 20px;
