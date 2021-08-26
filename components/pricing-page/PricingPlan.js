@@ -2,9 +2,46 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import checked from '../../images/check.png';
 import Image from 'next/image';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 import PricingPlanCarousel from './PricingPlanCarousel';
 const PricingPlan = () => {
+  const settings = {
+    className: '',
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1268,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
   const [yearly, setYearly] = useState(false);
   return (
     <>
@@ -19,7 +56,7 @@ const PricingPlan = () => {
               type='checkbox'
               onChange={(e) => setYearly(e.target.checked)}
             />
-            <span className='slider round'></span>
+            <span className='spinner round'></span>
           </label>
           <div className="annual">
             <p className={yearly?" active": ""}>
@@ -27,122 +64,124 @@ const PricingPlan = () => {
             </p>
           </div>
         </div>
-        <div className='container hide-mobile'>
-          <div className='single'>
-            <h4>Community</h4>
-            <h3>Free</h3>
-            <div className="plan-pointer">
-            <label className='time'></label>
-            </div>
-            <div className="plan-desc">
-              <Image src={checked} alt="checked" className='checked'/>
-              <label>
-                Lorem ipsum dolor sit amet,
-              </label>
-            </div>
-            <div className="plan-desc">
-              <Image src={checked} alt="checked" className='checked'/>
-              <label>
-                consectetur adipiscing elit. 
-              </label>
-            </div>
-            <div className="plan-desc">
-              <Image src={checked} alt="checked" className='checked'/>
-              <label>
-                In eleifend ultricies mollis.
-              </label>
-            </div>
-            <div className="plan-desc">
-              <Image src={checked} alt="checked" className='checked'/>
-              <label>
-                Suspendisse potenti.
-              </label>
-            </div>
-            <button className='btn plan-btn'>Start Free Trial</button>
-          </div>
-
-          <div className='single'>
-            <h4>Essential</h4>
-            <h3>{yearly ? '$250' : '$30'}</h3>
-            <div className="plan-pointer">
-              <label className='time'>{yearly ? 'Per Year' : 'Per Months'}</label>
-            </div>
-            <div className="plan-desc">
-              <Image src={checked} alt="checked" className='checked'/>
-              <label>
-                Lorem ipsum dolor sit amet,
-              </label>
-            </div>
-            <div className="plan-desc">
-              <Image src={checked} alt="checked" className='checked'/>
-              <label>
-                consectetur adipiscing elit. 
-              </label>
-            </div>
-            <div className="plan-desc">
-              <Image src={checked} alt="checked" className='checked'/>
-              <label>
-                In eleifend ultricies mollis.
-              </label>
-            </div>
-            <div className="plan-desc">
-              <Image src={checked} alt="checked" className='checked'/>
-              <label>
-                Suspendisse potenti.
-              </label>
-            </div>
-            <button className='btn plan-btn'>Start Free Trial</button>
-          </div>
-
-          <div className='single recommended'>
-            <div className='recommended-btn'>Recommended</div>
-            <h4>Business</h4>
-            <h3>{yearly ? '$350' : '$50'}</h3>
-            <div className="plan-pointer">
-              <label className='time'>{yearly ? 'Per Year' : 'Per Months'}</label>
-            </div>
-            <div className="plan-desc">
-              <Image src={checked} alt="checked" className='checked'/>
-              <label>
-                Lorem ipsum dolor sit amet,
-              </label>
-            </div>
-            <div className="plan-desc">
-              <Image src={checked} alt="checked" className='checked'/>
-              <label>
-                consectetur adipiscing elit. 
-              </label>
-            </div>
-            <div className="plan-desc">
-              <Image src={checked} alt="checked" className='checked'/>
-              <label>
-                In eleifend ultricies mollis.
-              </label>
-            </div>
-            <div className="plan-desc">
-              <Image src={checked} alt="checked" className='checked'/>
-              <label>
-                Suspendisse potenti.
-              </label>
-            </div>
-            <button className='btn plan-btn recomand-plan'>
-              Start Free Trial
-            </button>
-          </div>
-
-          <div className='single'>
-            <h4>Enterprise</h4>
-            <h3>Custom</h3>
-            <div className="plan-pointer">
+        <div >
+          <Slider {...settings} className="container">
+            <div className='single' >
+              <h4>Community</h4>
+              <h3>Free</h3>
+              <div className="plan-pointer">
               <label className='time'></label>
+              </div>
+              <div className="plan-desc">
+                <Image src={checked} alt="checked" className='checked'/>
+                <label>
+                  Lorem ipsum dolor sit amet,
+                </label>
+              </div>
+              <div className="plan-desc">
+                <Image src={checked} alt="checked" className='checked'/>
+                <label>
+                  consectetur adipiscing elit. 
+                </label>
+              </div>
+              <div className="plan-desc">
+                <Image src={checked} alt="checked" className='checked'/>
+                <label>
+                  In eleifend ultricies mollis.
+                </label>
+              </div>
+              <div className="plan-desc">
+                <Image src={checked} alt="checked" className='checked'/>
+                <label>
+                  Suspendisse potenti.
+                </label>
+              </div>
+              <button className='btn plan-btn'>Start Free Trial</button>
             </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              eleifend ultricies mollis. Suspendisse potenti.
-            </p>
 
-            <button className='btn plan-customBtn'>Contact Us</button>
-          </div>
+            <div className='single '>
+              <h4>Essential</h4>
+              <h3>{yearly ? '$250' : '$30'}</h3>
+              <div className="plan-pointer">
+                <label className='time'>{yearly ? 'Per Year' : 'Per Months'}</label>
+              </div>
+              <div className="plan-desc">
+                <Image src={checked} alt="checked" className='checked'/>
+                <label>
+                  Lorem ipsum dolor sit amet,
+                </label>
+              </div>
+              <div className="plan-desc">
+                <Image src={checked} alt="checked" className='checked'/>
+                <label>
+                  consectetur adipiscing elit. 
+                </label>
+              </div>
+              <div className="plan-desc">
+                <Image src={checked} alt="checked" className='checked'/>
+                <label>
+                  In eleifend ultricies mollis.
+                </label>
+              </div>
+              <div className="plan-desc">
+                <Image src={checked} alt="checked" className='checked'/>
+                <label>
+                  Suspendisse potenti.
+                </label>
+              </div>
+              <button className='btn plan-btn'>Start Free Trial</button>
+            </div>
+
+            <div className='single  recommended'>
+              <div className='recommended-btn'>Recommended</div>
+              <h4>Business</h4>
+              <h3>{yearly ? '$350' : '$50'}</h3>
+              <div className="plan-pointer">
+                <label className='time'>{yearly ? 'Per Year' : 'Per Months'}</label>
+              </div>
+              <div className="plan-desc">
+                <Image src={checked} alt="checked" className='checked'/>
+                <label>
+                  Lorem ipsum dolor sit amet,
+                </label>
+              </div>
+              <div className="plan-desc">
+                <Image src={checked} alt="checked" className='checked'/>
+                <label>
+                  consectetur adipiscing elit. 
+                </label>
+              </div>
+              <div className="plan-desc">
+                <Image src={checked} alt="checked" className='checked'/>
+                <label>
+                  In eleifend ultricies mollis.
+                </label>
+              </div>
+              <div className="plan-desc">
+                <Image src={checked} alt="checked" className='checked'/>
+                <label>
+                  Suspendisse potenti.
+                </label>
+              </div>
+              <button className='btn plan-btn recomand-plan'>
+                Start Free Trial
+              </button>
+            </div>
+
+            <div className='single '>
+              <h4>Enterprise</h4>
+              <h3>Custom</h3>
+              <div className="plan-pointer">
+                <label className='time'></label>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                eleifend ultricies mollis. Suspendisse potenti.
+              </p>
+
+              <button className='btn plan-customBtn'>Contact Us</button>
+            </div>
+          </Slider>
         </div>
       </Wrapper>
       {/* <PricingPlanCarousel yearly={yearly} /> */}
@@ -151,6 +190,14 @@ const PricingPlan = () => {
 };
 const Wrapper = styled.section`
   margin-bottom: 100px;
+  .slick-list {
+    padding-top: 100px !important;
+    width: 100% !important;
+    padding-bottom: 50px;
+    .slick-slide {
+      padding: 0 0.5rem;
+    }
+  }
   .active {
     font-weight: 700;
   }
@@ -368,7 +415,7 @@ const Wrapper = styled.section`
     height: 0;
   }
 
-  .slider {
+  .spinner {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -380,7 +427,7 @@ const Wrapper = styled.section`
     transition: 0.4s;
   }
 
-  .slider:before {
+  .spinner:before {
     position: absolute;
     content: '';
     height: 36px;
@@ -393,26 +440,26 @@ const Wrapper = styled.section`
     transition: 0.4s;
   }
 
-  input:checked + .slider {
+  input:checked + .spinner {
     background-color: #222;
   }
 
-  input:focus + .slider {
+  input:focus + .spinner {
     box-shadow: 0 0 1px #2196f3;
   }
 
-  input:checked + .slider:before {
+  input:checked + .spinner:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
   }
 
-  /* Rounded sliders */
-  .slider.round {
+  /* Rounded spinners */
+  .spinner.round {
     border-radius: 34px;
   }
 
-  .slider.round:before {
+  .spinner.round:before {
     border-radius: 50%;
   }
 `;

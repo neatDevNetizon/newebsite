@@ -41,6 +41,7 @@ const AboutUsTop = () => {
     );
 };
 const Wrapper = styled.div`
+    margin-top: 280px;
     display: grid;
     gap: 2rem;
     margin-bottom: 20px;

@@ -2,12 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import dot from "./../../images/Ellipse.png";
 import Image from "next/image";
+import c23 from '../../images/c23.png';
 const Story = () => {
     return (
         <Wrapper className="section">
             <div className="title">
                 <h3>Our Story</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <p>Hi, I’m Vineet Devaiah. I’m an entrepreneur, engineer, and the founder of TeliportMe.</p>
+                <Image src={c23} className="story-image"/>
             </div>
             <div className="container">
                 <div className="single">
@@ -130,16 +132,56 @@ const Story = () => {
                     </div>
                 </div>
             </div>
+            <div className="blank-container">
+                <div className="blank-square">
+                    <div className='blank-single'>
+                        <div className="content"></div>
+                    </div>
+                    <div className='blank-single'>
+                        <div className="content"></div>
+                    </div>
+                    <div className='blank-single'>
+                        <div className="content"></div>
+                    </div>
+                    <div className='blank-single'>
+                        <div className="content"></div>
+                    </div>
+                    <div className='blank-single'>
+                        <div className="content"></div>
+                    </div>
+                    <div className='blank-single'>
+                        <div className="content"></div>
+                    </div>
+                </div>
+            </div>
         </Wrapper>
     );
 };
 const Wrapper = styled.div`
     .title {
-        text-align: center;
+        div {
+            width: 100%;
+        }
         margin-bottom: 80px;
+        .story-image {
+            width: 100%;
+            
+        }
+        img {
+            width: 100% !important;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        p {
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 48px;
+        }
     }
     .single {
-        max-width: 1009px;
+        max-width: 1109px;
         margin: 0 auto;
         margin-bottom: 80px;
         display: flex;
@@ -174,6 +216,31 @@ const Wrapper = styled.div`
         .content {
             p {
                 margin-top: 0;
+            }
+        }
+    }
+    .blank-container {
+        padding-bottom: 100px;
+    }
+    .blank-square {
+        margin-bottom: 37px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 2rem;
+        flex-wrap: wrap;
+        @media (max-width: 955px) {
+            justify-content: space-around;
+        }
+        @media (max-width: 600px) {
+            margin-top: 40px;
+        }
+        .blank-single {
+            .content {
+                width: 320px;
+                height: 300px;
+                background-color: #6B7280;
+                border: 1px solid #707070;
             }
         }
     }
