@@ -32,6 +32,9 @@ const HeroBlog = () => {
   );
 };
 const Wrapper = styled.section`
+  @media (max-width: 800px) {
+    padding-top: 120px;
+  }
   display: grid;
   position: relative;
   margin-bottom: 200px;

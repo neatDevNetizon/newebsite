@@ -28,6 +28,7 @@ const Hero = () => {
   );
 };
 const Wrapper = styled.div`
+  
   @media (max-width: 600px) {
     margin-bottom: 30px;
   }
@@ -83,6 +84,9 @@ const Wrapper = styled.div`
 `;
 
 const HeroSection = styled.div`
+  @media (max-width: 800px) {
+    margin-top: 80px;
+  }
   min-height: 50vh;
   display: flex;
   flex-direction: column;
@@ -93,9 +97,6 @@ const HeroSection = styled.div`
 
   margin-top: -1rem;
   position: relative;
-  @media (max-width: 799px) {
-    margin-top: 0rem;
-  }
   .create {
     margin-bottom: 5px;
     letter-spacing: 4px;

@@ -15,18 +15,11 @@ const SignInWrapper = () => {
               <Link href="/" passHref>
                 <div className="logo-cont">
                   <Image src={logo} alt="aaa"></Image>
-                  <div>teliportme</div>
+                  <div className="mobile-logo">teliportme</div>
                 </div>
               </Link>
             </div>
           </div>
-{/* 
-          <div className="btn-container mobile-signup">
-            <Link href="sign-up" passHref>
-              <button className="btn signup-btn">Go Sign Up</button>
-            </Link>
-          </div> */}
-
           <div >
             <Link href="sign-in" passHref>
                 <button className="btn signup-btn">Go Sign In</button>
@@ -225,12 +218,17 @@ const Navbar = styled.section`
   width: 100%;
   position: fixed;
   z-index: 100;
-  height: 100px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 50px;
   padding-right: 20px;
+  @media(max-width: 600px) {
+    box-shadow: 2px 1px 6px #2e2e2eab;
+    background: #fff !important;
+    background-color: #fff;
+  }
   .heading {
     display: flex;
     align-items: center;
@@ -262,6 +260,11 @@ const Navbar = styled.section`
       }
     }
   }
+  .mobile-logo {
+        @media (max-width: 600px) {
+            display: none;
+        }
+    }
   .mobile-signup {
     top: 80px;
     left: 50%;

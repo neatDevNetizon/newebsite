@@ -14,7 +14,7 @@ const SignInWrapper = () => {
               <Link href="/" passHref>
                 <div className="logo-cont">
                   <Image src={logo} alt="aaa"></Image>
-                  <div>teliportme</div>
+                  <div className="mobile-logo">teliportme</div>
                 </div>
               </Link>
             </div>
@@ -208,12 +208,22 @@ const Navbar = styled.section`
   width: 100%;
   position: fixed;
   z-index: 100;
-  height: 100px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 50px;
   padding-right: 20px;
+  @media(max-width: 600px) {
+    box-shadow: 2px 1px 6px #2e2e2eab;
+    background: #fff !important;
+    background-color: #fff;
+  }
+  .mobile-logo {
+      @media (max-width: 600px) {
+          display: none;
+      }
+  }
   .heading {
     display: flex;
     align-items: center;

@@ -110,6 +110,7 @@ const Navbar = () => {
   );
 };
 const Wrapper = styled.nav`
+
   .wrapper {
     @media (max-width: 800px) {
       display: none;
@@ -220,15 +221,33 @@ const Wrapper = styled.nav`
 const Text = styled.div`
   font-size: 26px;
 `;
-const MobileNav = styled.nav`
+const MobileNav = styled.div`
+  @media (max-width: 799px){
+    box-shadow: 2px 1px 6px #2e2e2eab;
+    background: #fff;
+    position: fixed;
+    z-index: 10000000;
+    display: flex !important;
+    align-items: center !important;
+    height: 80px;
+    padding-left: 40px;
+    width: 100vw;
+    padding-right: 20px;
+    nav {
+      width: 100vw;
+    }
+  }
   .mobile-wrapper {
     display: none;
     @media (max-width: 799px) {
-      display: block;
+      display: flex;
+      align-items: center;
+      width: 100%;
+
     }
   }
   .heading {
-    width: 90vw;
+    width: 100%;
     position: relative;
     z-index: 99999;
     max-width: 1200px;

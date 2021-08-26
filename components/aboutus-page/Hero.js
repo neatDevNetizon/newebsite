@@ -108,6 +108,9 @@ const Wrapper = styled.div`
 `;
 
 const HeroSection = styled.div`
+  @media (max-width: 800px) {
+    padding-top: 80px;
+  }
   min-height: 50vh;
   display: flex;
   flex-direction: column;

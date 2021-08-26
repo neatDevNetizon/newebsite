@@ -23,6 +23,9 @@ const HeroSection = styled.div`
 
   max-width: 1170px;
   text-align: center;
+  @media (max-width: 800px) {
+    padding-top: 120px;
+  }
   @media (max-width: 600px) {
     text-align: left;
     margin-bottom: 50px;
