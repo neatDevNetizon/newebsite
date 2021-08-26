@@ -9,6 +9,7 @@ const Hero = () => {
   );
 };
 const Wrapper = styled.div`
+  
   max-width: 808px;
   text-align: center;
   margin: 100px auto;

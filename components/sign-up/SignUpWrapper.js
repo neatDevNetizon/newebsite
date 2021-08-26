@@ -12,12 +12,12 @@ const SignUpWrapper = () => {
                 <div className="heading">
                     <div className="logo">
                         <Link href="/" passHref>
-                            <Image src={logo} alt="" />
+                            <div className="logo-cont">
+                            <Image src={logo} alt="aaa"></Image>
+                            <div>teliportme</div>
+                            </div>
                         </Link>
                     </div>
-                    <p>
-                        <Link href="/">Go back to HomePage</Link>
-                    </p>
                 </div>
 
                 <div className="btn-container mobile-signup">
@@ -41,7 +41,12 @@ const SignUpWrapper = () => {
                         <button type="submit" className="btn create-btn">
                             Create Account
                         </button>
-                        <p className="body2">
+                        <div className="or">
+                            <p className="body1">OR</p>
+                        </div>
+                        <button className="btn google-btn">Continue with Google</button>
+                        <button className="btn facebook-btn">Continue with Facebook</button>
+                        <p className="body2 terms">
                             By registering with us you agree with our terms and
                             privacy policy.
                         </p>
@@ -55,9 +60,6 @@ const SignUpWrapper = () => {
                         <button className="btn signup-btn">Sign In</button>
                     </Link>
                 </div>
-                <button className="btn facebook-btn">
-                    Continue with Facebook
-                </button>
             </div>
         </Wrapper>
     );
@@ -87,6 +89,25 @@ const Wrapper = styled.section`
             }
         }
     }
+    .logo {
+        z-index: 9;
+        cursor: pointer;
+        img {
+          // max-width: 250px;
+        }
+      }
+      .logo-cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        div {
+          margin-top: auto;
+          font-size: 22px;
+          font-weight: 800;
+          text-transform: uppercase;
+        }
+      }
     .image {
         position: relative;
         min-height: 768px;
@@ -96,7 +117,7 @@ const Wrapper = styled.section`
             top: 0;
             right: 0;
             left: 0;
-            height: 100%;
+            height: 100vh;
             width: 100%;
             background-color: #f9dd9e;
             opacity: 0.6;
@@ -164,11 +185,19 @@ const Wrapper = styled.section`
             margin-bottom: 70px;
         }
         .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            .terms {
+                margin-top: 20px;
+            }
         }
         input {
             display: block;
             width: 90%;
-            margin-bottom: 45px;
+            margin-bottom: 20px;
             border: none;
             border-bottom: 1px solid #565658;
             padding: 1rem;
@@ -188,50 +217,50 @@ const Wrapper = styled.section`
             }
         }
 
-        .or {
+        .google-btn {
+            height: 46px;
+            width: 274px;
+            background-color: #222;
+            color: #fff;
+            margin: 1rem 0;
+            font-size: 14px;
+        }
+          .facebook-btn {
+            height: 46px;
+            width: 274px;
+            background-color: #222;
+            color: #fff;
+            font-size: 14px;
+          }
+          .or {
             position: relative;
+            width: fit-content;
             ::before {
-                content: "";
-                position: absolute;
-                top: 50%;
-                left: -80px;
-                height: 2px;
-                width: 56px;
-                transform: translateY(-50%);
-                background-color: #262525;
+              content: "";
+              position: absolute;
+              top: 50%;
+              left: -80px;
+              height: 2px;
+              width: 56px;
+              transform: translateY(-50%);
+              background-color: #262525;
             }
             ::after {
-                content: "";
-                position: absolute;
-                top: 50%;
-                right: -80px;
-                height: 2px;
-                width: 56px;
-                transform: translateY(-50%);
-                background-color: #262525;
+              content: "";
+              position: absolute;
+              top: 50%;
+              right: -80px;
+              height: 2px;
+              width: 56px;
+              transform: translateY(-50%);
+              background-color: #262525;
             }
-
+      
             p {
-                font-weight: 700;
-                margin: 0;
+              font-weight: 700;
+              margin: 0;
             }
-        }
-    }
-    .facebook-btn {
-        position: absolute;
-        right: 10%;
-        bottom: 10%;
-        z-index: 10;
-        height: 46px;
-        width: 274px;
-        background-color: #222;
-        color: #fff;
-        font-size: 14px;
-        @media (max-width: 1099px) {
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
+          }
     }
 `;
 export default SignUpWrapper;

@@ -9,7 +9,7 @@ import Image from 'next/image';
 const PricingWrapper = () => {
   return (
     <Wrapper>
-      <h3 className='heading'>Take A Look On Plans Comparison</h3>
+      {/* <h3 className='heading'>Take A Look On Plans Comparison</h3> */}
 
       <table>
         <colgroup>
@@ -321,6 +321,7 @@ const Wrapper = styled.div`
   }
   @media (max-width: 600px) {
     margin-bottom: 40px;
+    padding: 0;
   }
   .white {
     color: #fff;
@@ -343,6 +344,9 @@ const Wrapper = styled.div`
     border-spacing: 15px 0;
     td {
       // border-bottom: 1px solid #060606;
+    }
+    @media (max-width: 800px) {
+      padding: 0;
     }
   }
   tr th:nth-child(4){

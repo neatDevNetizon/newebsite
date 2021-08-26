@@ -38,6 +38,7 @@ const Wrapper = styled.div`
   }
   .content {
     max-width: 414px;
+    color: #6b7280;
   }
   .image {
     img {

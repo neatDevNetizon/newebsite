@@ -10,7 +10,7 @@ const PricingPlan = () => {
     <>
       <Wrapper className='section'>
         <div className='header'>
-          <p className='body2'>
+          <p className={yearly?"monthly ": "monthly active"}>
             Monthly billing <br />
             <span>no contract</span>
           </p>
@@ -21,8 +21,8 @@ const PricingPlan = () => {
             />
             <span className='slider round'></span>
           </label>
-          <div className='annual'>
-            <p>
+          <div className="annual">
+            <p className={yearly?" active": ""}>
               Annual billing <br /> <span>20% </span>Off
             </p>
           </div>
@@ -151,6 +151,13 @@ const PricingPlan = () => {
 };
 const Wrapper = styled.section`
   margin-bottom: 100px;
+  .active {
+    font-weight: 700;
+  }
+  .monthly {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
   /* @media (min-width: 601px) {
     .hide-desktop {
       display: none !important;
@@ -179,7 +186,6 @@ const Wrapper = styled.section`
   }
   .annual {
     p {
-      font-weight: 600;
       margin: 0;
       font-size: 14px;
       span {
@@ -189,7 +195,7 @@ const Wrapper = styled.section`
   }
 
   .container {
-    margin-top: 130px;
+    margin-top: 30px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -207,7 +213,7 @@ const Wrapper = styled.section`
     text-align: center;
     border-radius: 15px;
     box-shadow: var(--shadow-3);
-    width: 276px;
+    width: 280px;
     padding: 3rem 2rem;
 
     h4 {
@@ -232,7 +238,7 @@ const Wrapper = styled.section`
     .plan-desc {
       margin: 10px 0px;
       label {
-        margin-left: 5px;
+        margin-left: 10px;
       }
     }
 
@@ -250,6 +256,9 @@ const Wrapper = styled.section`
       text-align: center;
       display: block;
     }
+  }
+  .single:nth-child(3) {
+    margin-top: 100px;
   }
   .recommended {
     // height: 468px;
@@ -293,6 +302,19 @@ const Wrapper = styled.section`
     box-shadow: none;
     border: 1px solid #707070;
     font-size: 14px;
+    position: relative;
+    
+    &:hover {
+      :after {
+        width: 100%;
+        content: '';
+        height: 3px;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        background-color: #707070;
+      }
+    }
   }
   .plan-customBtn {
     height: 46px;
@@ -303,12 +325,34 @@ const Wrapper = styled.section`
     box-shadow: none;
     border: 1px solid #707070;
     font-size: 14px;
-    // position: absolute;
+    position: relative;
+    &:hover {
+      :after {
+        width: 100%;
+        content: '';
+        height: 3px;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        background-color:  #fff;
+      }
+    }
   }
   .recomand-plan {
     background: #33b864;
     color: #fff;
     margin-top: 40px;
+    &:hover {
+      :after {
+        width: 100%;
+        content: '';
+        height: 3px;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        background-color: #fff;
+      }
+    }
   }
   /* switch css  */
   .switch {

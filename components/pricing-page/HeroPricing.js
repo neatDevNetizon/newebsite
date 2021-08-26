@@ -49,6 +49,9 @@ const HeroSection = styled.div`
     font-weight: bold;
     letter-spacing: -1px;
     font-family: Spartan, sans-serif;
+    @media (max-width: 600px) {
+      font-size: 36px;
+    }
   }
 `;
 export default HeroPricing;

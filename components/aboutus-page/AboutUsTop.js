@@ -76,6 +76,7 @@ const Wrapper = styled.div`
         }
     }
     .text {
+        color: #6b7280;
         background-color: #fff;
         box-shadow: var(--shadow-2);
         border-radius: 10px;
