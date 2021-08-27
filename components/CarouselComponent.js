@@ -79,6 +79,16 @@ const CarouselComponent = () => {
                 <h6>VP of Photography</h6>
                 <p>Frontend Developer</p>
               </div>
+              <div className="mobile-carousel">
+                <div className='mobile-image'>
+                  <Image src={man} alt='' />
+                </div>
+                <div className='mobile-writer'>
+                  <h4>Shanto</h4>
+                  <h6>VP of Photography</h6>
+                  <p>Frontend Developer</p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -93,10 +103,15 @@ const CarouselComponent = () => {
               <p className='review'>
                 We will definitely use this APP for our future customers in realestate and small business ...! Excellent solution 👌❤️
               </p>
-              <div className='writer'>
-                <h4>Sandro</h4>
-                <h6>VP of Photography</h6>
-                <p>Seo Web Milan</p>
+              <div className="mobile-carousel">
+                <div className='mobile-image'>
+                  <Image src={man} alt='' />
+                </div>
+                <div className='mobile-writer'>
+                  <h4>Sandro</h4>
+                  <h6>VP of Photography</h6>
+                  <p>Seo Web Milan</p>
+                </div>
               </div>
             </div>
           </div>
@@ -136,6 +151,9 @@ const CarouselComponent = () => {
 const CarouselWrapper = styled.div`
   padding: 8rem 0rem;
   position: relative;
+  @media(max-width: 600px) {
+    padding: 2rem 0rem;
+  }
   .container {
     display: grid !important;
     background-color: #FFE8B9;
@@ -155,6 +173,52 @@ const CarouselWrapper = styled.div`
     @media (max-width: 900px) {
       display: flex;
       justify-content: center;
+    }
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+  .mobile-carousel {
+    display: none;
+    @media(max-width: 600px) {
+      display: flex;
+    }
+    .mobile-writer {
+      display: none;
+      @media(max-width: 600px) {
+        display: block;
+      }
+    }
+    .mobile-image {
+      width: 150px;
+      height: 200px;
+    }
+    .mobile-writer {
+      padding-left: 1rem;
+      margin-top: 2rem;
+      h4 {
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-bottom: 0.3rem;
+        font-size: 24px;
+      }
+      p {
+        font-weight: 600;
+        /* position: relative; */
+        margin: 0;
+        letter-spacing: 3px;
+        word-spacing: 5px;
+  
+        /* ::before {
+          content: '';
+          height: 2px;
+          width: 25px;
+          position: absolute;
+          top: 50%;
+          left: -50px;
+          background-color: #efbe84;
+        } */
+      }
     }
   }
   .img-container {
@@ -222,6 +286,9 @@ const CarouselWrapper = styled.div`
     }
   }
   .writer {
+    @media (max-width: 600px) {
+      display: none;
+    }
     margin-top: 2rem;
     h4 {
       font-weight: 600;

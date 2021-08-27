@@ -10,21 +10,23 @@ const SignInWrapper = () => {
   return (
     <>
       <Navbar>
-          <div className="heading">
-            <div className="logo">
-              <Link href="/" passHref>
-                <div className="logo-cont">
-                  <Image src={logo} alt="aaa"></Image>
-                  <div className="mobile-logo">teliportme</div>
+         <div className="navbar">
+            <div className="heading">
+                <div className="logo">
+                <Link href="/" passHref>
+                    <div className="logo-cont">
+                    <Image src={logo} alt="aaa"></Image>
+                    <div className="mobile-logo">teliportme</div>
+                    </div>
+                </Link>
                 </div>
-              </Link>
             </div>
-          </div>
-          <div >
-            <Link href="sign-in" passHref>
-                <button className="btn signup-btn">Go Sign In</button>
-            </Link>
-          </div>
+            <div >
+                <Link href="sign-in" passHref>
+                    <button className="btn signup-btn">Go Sign In</button>
+                </Link>
+            </div>
+         </div>
         </Navbar>
       <Wrapper>
         <div className="image">
@@ -215,46 +217,61 @@ const Wrapper = styled.section`
     }
 `;
 const Navbar = styled.section`
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-  height: 80px;
+width: 100vw;
+justify-content: center;
+position: fixed;
+z-index: 100;
+height: 80px;
+display: flex;
+align-items: center;
+@media(max-width: 600px) {
+  box-shadow: 2px 1px 6px #2e2e2eab;
+  background: #fff !important;
+  background-color: #fff;
+}
+.mobile-logo {
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+.navbar {
+  width: 90%;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
+}
+.heading {
+  // width: 90%;
+  display: flex;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 20px;
-  @media(max-width: 600px) {
-    box-shadow: 2px 1px 6px #2e2e2eab;
-    background: #fff !important;
-    background-color: #fff;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  
+  p {
+    margin: 0;
+    a {
+      color: #262525;
+    }
   }
-  .heading {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    p {
-      margin: 0;
-      a {
-        color: #262525;
-      }
+  .logo {
+    z-index: 9;
+    cursor: pointer;
+    img {
+      // max-width: 250px;
     }
-    .logo {
-      z-index: 9;
-      cursor: pointer;
-      img {
-        // max-width: 250px;
-      }
-    }
+  }
     .logo-cont {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 0.5rem;
       img {
-        width: 40px;
-        height:40px;
+        width: 48px;
+        height:48px;
+        @media(max-width: 600px) {
+          width: 40px;
+          height:40px;
+        }
       }
       div {
         margin-top: auto;

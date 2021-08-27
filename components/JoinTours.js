@@ -64,8 +64,14 @@ const Wrapper = styled.section`
     @media (max-width: 1099px) {
       margin-bottom: 30px;
     }
+    @media (max-width: 600px) {
+      margin-top: 0px;
+    }
     .left {
       position: relative;
+      @media (max-width: 600px) {
+        display: none;
+      }
       .img1 {
         position: absolute;
         top: 50%;
@@ -124,6 +130,9 @@ const Wrapper = styled.section`
     .right-container {
       position: absolute;
       max-width: 80vw;
+      @media (max-width: 600px) {
+        max-width: 90vw;
+      }
       h3 {
         line-height: 55px;
         color: #111827;

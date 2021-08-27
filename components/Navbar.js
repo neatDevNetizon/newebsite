@@ -119,7 +119,7 @@ const Wrapper = styled.nav`
   nav {
     padding-top: 1.5rem;
     padding-bottom: 2rem;
-    width: 95vw;
+    width: 90vw;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -230,11 +230,10 @@ const MobileNav = styled.div`
     display: flex !important;
     align-items: center !important;
     height: 80px;
-    padding-left: 40px;
+    justify-content: center;
     width: 100vw;
-    padding-right: 20px;
     nav {
-      width: 100vw;
+      width: 90vw;
     }
   }
   .mobile-wrapper {
@@ -242,8 +241,7 @@ const MobileNav = styled.div`
     @media (max-width: 799px) {
       display: flex;
       align-items: center;
-      width: 100%;
-
+      width: 90%;
     }
   }
   .heading {

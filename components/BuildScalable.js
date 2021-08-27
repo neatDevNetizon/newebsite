@@ -2,13 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import Image1 from './../images/Image 1.png';
 import Image from 'next/image';
-import Icon1 from "./../images/build-icon.svg";
-const BuildScalable = () => {
+import buildicon from "./../images/platform-icon.svg"
+const Platform = () => {
   return (
     <Wrapper className='section'>
       <Header>
         <div className="platform-icon">
-          {"<"}
+          <Image src={buildicon} alt=""/>
         </div>
         <h3 className="plat-title">One Unified Platform </h3>
         <p className='title-desc'>
@@ -54,7 +54,7 @@ const BuildScalable = () => {
         </ColumnLeft>
         <ColumnRight>
           <div>
-            <Image src={Image1} alt='Image 1' />
+            <Image src={Image1} alt='Image 1' className="platform-img" />
           </div>
         </ColumnRight>
       </Body>
@@ -106,11 +106,10 @@ const Header = styled.div`
     }
   }
   .platform-icon {
-    padding: 200px 0px 0px;
-    font-size: 30px;
-    font-weight: 900;
-    font-family: Spartan, sans-serif;
-    width: 50%;
+    padding: 80px 0px 0px;
+    @media (max-width: 600px) {
+      padding: 30px 0px 0px;
+    }
   }
   .plat-title {
     font-weight: 800;
@@ -118,10 +117,10 @@ const Header = styled.div`
     font-size: 60px;
     padding: 41px 0px 0px;
     margin: 7px 0px 8px;
-    color: rgba(34, 2, 64, 0.82);
+    color: rgba(18,96,24, 0.8);
     letter-spacing: -0.18rem;
     @media (max-width: 600px) {
-      padding: 137px 0px 0px;
+      padding: 50px 0px 0px;
       margin: 7px 39px 8px -12px;
       font-size: 30px;
       line-height: 39px;
@@ -163,7 +162,7 @@ const SingleItem = styled.div`
     line-height: 45px;
     font-weight: 700;
     letter-spacing: 1px;
-    color: rgba(17, 24, 39,0.84);
+    color: rgb(17, 24, 39, 0.8);
     text-align: start;
     transition: 0.3s ease;
     @media (max-width: 600px) {
@@ -172,12 +171,14 @@ const SingleItem = styled.div`
   }
   p {
     padding: 3px 0px 0px;
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: medium;
     margin: 0px;
-    line-height: 21px;
+    line-height: 20px;
     font-weight: 500;
     letter-spacing: normal;
-    color: rgba(107, 114, 128, 0.8);
+    color: rgba(107, 114, 128);
+    opacity: 0.8;
     text-align: start;
     @media (max-width: 600px) {
       font-size: 16px;
@@ -185,9 +186,9 @@ const SingleItem = styled.div`
     }
   }
   :hover {
-    background-color: rgba(228, 190, 225, 0.12);
+    background-color: rgba(190, 255, 195, 0.12);
     h5 {
-      color: #692F92;
+      color: #3C7C41;
     }
   }
 `;
@@ -200,4 +201,4 @@ const ColumnRight = styled.div`
     object-fit:
   }
 `;
-export default BuildScalable;
+export default Platform;

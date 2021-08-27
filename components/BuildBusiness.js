@@ -78,6 +78,7 @@ const Header = styled.div`
     max-width: 896px;
     @media(max-width: 600px){
       font-size:18px;
+      line-height: 28px;
     }
   }
 `;

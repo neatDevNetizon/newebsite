@@ -256,19 +256,19 @@ const Wrapper = styled.section`
     border: 2px solid #222;
     color: #222;
     z-index: 99;
-    @media (max-width: 900px) {
-      top: -6%;
-    }
-    @media (max-width: 600px) {
-      top: -12%;
-    }
+    // @media (max-width: 900px) {
+    //   top: -6%;
+    // }
+    // @media (max-width: 600px) {
+    //   top: -12%;
+    // }
   }
   .slick-prev {
     // left: 65%;
-    @media (max-width: 900px) {
-      left: 40%;
-      transform: translateX(-40%);
-    }
+    // @media (max-width: 900px) {
+    //   left: 40%;
+    //   transform: translateX(-40%);
+    // }
     :before {
       content: url('images/left-arrow.png');
       color: #222;
@@ -280,10 +280,9 @@ const Wrapper = styled.section`
   }
   .slick-next {
     left: 96.3%;
-    @media (max-width: 900px) {
-      left: 60%;
-      transform: translateX(-60%);
-    }
+    // @media (max-width: 900px) {
+    //   left: 96.3%;
+    // }
     :before {
       content: url('images/right-arrow.png');
       color: #222;

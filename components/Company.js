@@ -87,6 +87,9 @@ const Wrapper = styled.div`
     line-height: 28px;
     color: rgba(38, 37, 37, 0.8);
     font-weight: 500;
+    @media(max-width: 600px) {
+      margin-top: 30px;
+    }
   }
   .company {
     padding-top: 0px;
@@ -102,6 +105,7 @@ const Wrapper = styled.div`
       margin-bottom: 2rem;
     }
     @media (max-width: 600px) {
+      margin-top: 30px;
       justify-content: space-around;
       gap: 0rem 2rem;
       .company-img {

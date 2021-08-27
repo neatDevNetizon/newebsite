@@ -107,6 +107,9 @@ const Header = styled.div`
   }
   .platform-icon {
     padding: 80px 0px 0px;
+    @media (max-width: 600px) {
+      padding: 30px 0px 0px;
+    }
   }
   .plat-title {
     font-weight: 800;
@@ -117,7 +120,7 @@ const Header = styled.div`
     color: rgba(18,96,24, 0.8);
     letter-spacing: -0.18rem;
     @media (max-width: 600px) {
-      padding: 137px 0px 0px;
+      padding: 50px 0px 0px;
       margin: 7px 39px 8px -12px;
       font-size: 30px;
       line-height: 39px;

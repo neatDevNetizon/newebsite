@@ -130,6 +130,10 @@ const Wrapper = styled.section`
       @media (max-width: 1070px) {
         text-align: center;
       }
+      @media (max-width: 600px) {
+        text-align: left;
+        font-size: 30px;
+      }
     }
   }
   .absolute {

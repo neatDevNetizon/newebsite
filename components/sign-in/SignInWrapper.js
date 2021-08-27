@@ -9,6 +9,7 @@ const SignInWrapper = () => {
   return (
     <>
       <Navbar>
+        <div className="navbar">
           <div className="heading">
             <div className="logo">
               <Link href="/" passHref>
@@ -19,19 +20,13 @@ const SignInWrapper = () => {
               </Link>
             </div>
           </div>
-{/* 
-          <div className="btn-container mobile-signup">
-            <Link href="sign-up" passHref>
-              <button className="btn signup-btn">Go Sign Up</button>
-            </Link>
-          </div> */}
-
           <div >
             <Link href="sign-up" passHref>
               <button className="btn signup-btn">Sign Up</button>
             </Link>
           </div>
-        </Navbar>
+        </div>
+      </Navbar>
       <Wrapper>
         <div className="image">
           <Image src={signIn} alt="" />
@@ -205,15 +200,13 @@ const Wrapper = styled.section`
   }
 `;
 const Navbar = styled.section`
-  width: 100%;
+  width: 100vw;
+  justify-content: center;
   position: fixed;
   z-index: 100;
   height: 80px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 20px;
   @media(max-width: 600px) {
     box-shadow: 2px 1px 6px #2e2e2eab;
     background: #fff !important;
@@ -224,11 +217,19 @@ const Navbar = styled.section`
           display: none;
       }
   }
+  .navbar {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+  }
   .heading {
+    // width: 90%;
     display: flex;
     align-items: center;
     gap: 1.5rem;
     flex-wrap: wrap;
+    
     p {
       margin: 0;
       a {
@@ -248,8 +249,12 @@ const Navbar = styled.section`
       align-items: center;
       gap: 0.5rem;
       img {
-        width: 40px;
-        height:40px;
+        width: 48px;
+        height:48px;
+        @media(max-width: 600px) {
+          width: 40px;
+          height:40px;
+        }
       }
       div {
         margin-top: auto;
@@ -274,6 +279,7 @@ const Navbar = styled.section`
     }
   }
   .signup-btn {
+    margin-top: 15px;
     height: 46px;
     width: 116px;
     background: #fff;

@@ -158,6 +158,17 @@ const Header = styled.div`
     letter-spacing: -3px;
     color: #111827;
     text-align: start;
+    @media (max-width: 600px) {
+      padding: 50px 0px 0px;
+      margin: 7px 39px 8px -12px;
+      font-size: 30px;
+      line-height: 39px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      font-family: Spartan, sans-serif;
+      color: rgb(17, 24, 39);
+      text-align: start;
+    }
   }
   .title-desc {
     max-width: 1050px;
@@ -169,6 +180,12 @@ const Header = styled.div`
     font-family: Spartan, sans-serif;
     letter-spacing: normal;
     color: #6B7280;
+    @media (max-width: 600px) {
+      font-size: 18px;
+      margin: -1px 0px 20px -9px;
+      padding: 24px 0px 66px;
+      line-height: 28px;
+    }
   }
 `;
 const Wrapper = styled.div`

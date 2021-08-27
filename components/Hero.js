@@ -8,19 +8,21 @@ const Hero = () => {
       <div className='bg'>
         {/* <div className='curve'></div> */}
         <Navbar />
-        <HeroSection className='section'>
-          <p className='create'></p>
-          <h1 className='title'>
-            A complete virtual tour platform, engineered for growth
-          </h1>
-          <p className='trust'>
-            Capture, build and analyze virtual tours using TeliportMe’s powerful
-            software solutions and API’s designed to help you grow your revenue.
-            Trusted by <span> 15 Million </span> creators and{' '}
-            <span> 20,000+ </span> B usinesses
-          </p>
-          <div className='btn-container'>
-            <button className='btn trial-btn'>Start Free Trial</button>
+        <HeroSection>
+          <div className="hero-contianer">
+            <p className='create'></p>
+            <h1 className='title'>
+              A complete virtual tour platform, engineered for growth
+            </h1>
+            <p className='trust'>
+              Capture, build and analyze virtual tours using TeliportMe’s powerful
+              software solutions and API’s designed to help you grow your revenue.
+              Trusted by <span> 15 Million </span> creators and{' '}
+              <span> 20,000+ </span> B usinesses
+            </p>
+            <div className='btn-container'>
+              <button className='btn trial-btn'>Start Free Trial</button>
+            </div>
           </div>
         </HeroSection>
       </div>
@@ -45,11 +47,8 @@ const Wrapper = styled.div`
     @media (max-width: 800px) {
       height: 80vh;
     }
-    @media (max-width: 400px) {
-      height: 80vh;
-    }
-    @media (max-width: 330px) {
-      height: 80vh;
+    @media (max-width: 600px) {
+      height: 350px;
     }
     ::before {
       content: '';
@@ -69,7 +68,6 @@ const Wrapper = styled.div`
       z-index: 1;
     }
   }
-
   .curve {
     width: 100%;
     height: 65px;
@@ -87,16 +85,30 @@ const HeroSection = styled.div`
   @media (max-width: 800px) {
     margin-top: 80px;
   }
+  width: 100vw;
   min-height: 50vh;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
   z-index: 10;
-  width: 90vw;
-
   margin-top: -1rem;
   position: relative;
+  align-items: center;
+  .hero-contianer {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    width: 1200px;
+    flex-direction: column;
+    @media (max-width: 1350px) {
+      width: 90vw;
+      jusify-content: center;
+    }
+  }
+  @media (max-width: 1350px) {
+    width: auto;
+  }
   .create {
     margin-bottom: 5px;
     letter-spacing: 4px;
@@ -150,6 +162,7 @@ const HeroSection = styled.div`
     @media (max-width: 600px) {
       font-size: 11px;
       margin: 0;
+      padding-bottom: 10px;
     }
     @media (max-width: 330px) {
       font-size: 10px;
@@ -170,6 +183,7 @@ const HeroSection = styled.div`
     line-height: 65px;
     @media (max-width: 600px) {
       line-height: 40px;
+      padding-bottom: 20px;
     }
   }
   .btn-container {
