@@ -5,6 +5,11 @@ import Image from "next/image";
 const AboutUsTop = () => {
     return (
         <Wrapper className="section">
+            <div className = "hide-title">
+                <h3>
+                    About Us
+                </h3>
+            </div>
             <div className="image">
                 <Image src={aboutImg} alt="" />
                 {/* <button className="btn about-btn">
@@ -13,7 +18,7 @@ const AboutUsTop = () => {
             </div>
             <div className="container">
                 <div className="text">
-                    <h3>About Us</h3>
+                    <h3 className="about-title">About Us</h3>
                     <p className="content">
                         TeliportMe is a technology company that focuses on
                         bringing phenomenally talented technologists, product
@@ -50,7 +55,20 @@ const Wrapper = styled.div`
         grid-template-columns: 1fr 1fr;
         margin-bottom: 100px;
     }
-
+    .hide-title {
+        display: none;
+        @media(max-width: 1100px) {
+            display: block;
+        }
+        h3 {
+            font-size: 38px;
+        }
+    }
+    .about-title {
+        @media(max-width: 1100px) {
+            display: none;
+        }
+    }
     .image {
         display: flex;
         flex-direction: column;
@@ -88,6 +106,9 @@ const Wrapper = styled.div`
             position: absolute;
             top: 10%;
             left: -10%;
+        }
+        @media (max-width: 1100px) {
+            width: 100%;
         }
     }
     .content {

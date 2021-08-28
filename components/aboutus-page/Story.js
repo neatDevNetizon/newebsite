@@ -178,6 +178,9 @@ const Wrapper = styled.div`
         }
         h3 {
             font-size: 48px;
+            @media (max-width: 600px) {
+                font-size: 38px !important;
+            }
         }
     }
     .single {
