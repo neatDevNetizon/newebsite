@@ -43,112 +43,123 @@ const LearnMoreCarousel = () => {
 
         <Slider {...settings} className='slider'>
           <div className='wrapper'>
-            <Image src={c1} alt='' />
-            <div className='content'>
-              <h5>Understanding TeliportMe cul..</h5>
-              <p className='body2'>
-                Culture is a heavy word, its not something that can be measured
-                yet can be felt within the confines of an office space,
-                interactions of your product and behaviour of
-              </p>
-              <div className='footer'>
-                <div className='left'>
-                  <Image src={daniel} alt='' />
-                  <p>Vineet Devaiah</p>
-                </div>
-                <div className='right'>
-                  <p className='body2'>Jun 2021</p>
-                  <h4>05</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className='wrapper'>
-            <Image src={c2} alt='' />
-            <div className='content'>
-              <h5>Structure to the Culture Prob..</h5>
-              <p className='body2'>
-                Culture is a heavy word, its not something that can be measured
-                yet can be felt within the confines of an office space,
-                interactions of your product and behaviour of
-              </p>
-              <div className='footer'>
-                <div className='left'>
-                  <Image src={daniel} alt='' />
-                  <p>Vineet Devaiah</p>
-                </div>
-                <div className='right'>
-                  <p className='body2'>Jun 2021</p>
-                  <h4>05</h4>
+            <div className="slider-last">
+              <Image src={c1} alt='' />
+              <div className='content'>
+                <h5>Understanding TeliportMe cul..</h5>
+                <p className='body2'>
+                  Culture is a heavy word, its not something that can be measured
+                  yet can be felt within the confines of an office space,
+                  interactions of your product and behaviour of
+                </p>
+                <div className='footer'>
+                  <div className='left'>
+                    <Image src={daniel} alt='' />
+                    <p>Vineet Devaiah</p>
+                  </div>
+                  <div className='right'>
+                    <p className='body2'>Jun 2021</p>
+                    <h4>05</h4>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           <div className='wrapper'>
-            <Image src={c3} alt='' />
-            <div className='content'>
-              <h5>AR needs a visual API for the..</h5>
-              <p className='body2'>
-                Culture is a heavy word, its not something that can be measured
-                yet can be felt within the confines of an office space,
-                interactions of your product and behaviour of
-              </p>
-              <div className='footer'>
-                <div className='left'>
-                  <Image src={daniel} alt='' />
-                  <p>Vineet Devaiah</p>
-                </div>
-                <div className='right'>
-                  <p className='body2'>Jun 2021</p>
-                  <h4>05</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='wrapper'>
-            <Image src={c1} alt='' />
-            <div className='content'>
-              <h5>Understanding TeliportMe cul..</h5>
-              <p className='body2'>
-                Culture is a heavy word, its not something that can be measured
-                yet can be felt within the confines of an office space,
-                interactions of your product and behaviour of
-              </p>
-              <div className='footer'>
-                <div className='left'>
-                  <Image src={daniel} alt='' />
-                  <p>Vineet Devaiah</p>
-                </div>
-                <div className='right'>
-                  <p className='body2'>Jun 2021</p>
-                  <h4>05</h4>
+            <div className="slider-last">
+              <Image src={c2} alt='' />
+              <div className='content'>
+                <h5>Structure to the Culture Prob..</h5>
+                <p className='body2'>
+                  Culture is a heavy word, its not something that can be measured
+                  yet can be felt within the confines of an office space,
+                  interactions of your product and behaviour of
+                </p>
+                <div className='footer'>
+                  <div className='left'>
+                    <Image src={daniel} alt='' />
+                    <p>Vineet Devaiah</p>
+                  </div>
+                  <div className='right'>
+                    <p className='body2'>Jun 2021</p>
+                    <h4>05</h4>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           <div className='wrapper'>
-            <Image src={c2} alt='' />
-            <div className='content'>
-              <h5>Understanding TeliportMe cul..</h5>
-              <p className='body2'>
-                Culture is a heavy word, its not something that can be measured
-                yet can be felt within the confines of an office space,
-                interactions of your product and behaviour of
-              </p>
-              <div className='footer'>
-                <div className='left'>
-                  <Image src={daniel} alt='' />
-                  <p>Vineet Devaiah</p>
-                </div>
-                <div className='right'>
-                  <p className='body2'>Jun 2021</p>
-                  <h4>05</h4>
+            <div className="slider-last">
+              <Image src={c3} alt='' />
+              <div className='content'>
+                <h5>AR needs a visual API for the..</h5>
+                <p className='body2'>
+                  Culture is a heavy word, its not something that can be measured
+                  yet can be felt within the confines of an office space,
+                  interactions of your product and behaviour of
+                </p>
+                <div className='footer'>
+                  <div className='left'>
+                    <Image src={daniel} alt='' />
+                    <p>Vineet Devaiah</p>
+                  </div>
+                  <div className='right'>
+                    <p className='body2'>Jun 2021</p>
+                    <h4>05</h4>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div className='wrapper'>
+            <div className="slider-last">
+              <Image src={c1} alt='' />
+              <div className='content'>
+                <h5>Understanding TeliportMe cul..</h5>
+                <p className='body2'>
+                  Culture is a heavy word, its not something that can be measured
+                  yet can be felt within the confines of an office space,
+                  interactions of your product and behaviour of
+                </p>
+                <div className='footer'>
+                  <div className='left'>
+                    <Image src={daniel} alt='' />
+                    <p>Vineet Devaiah</p>
+                  </div>
+                  <div className='right'>
+                    <p className='body2'>Jun 2021</p>
+                    <h4>05</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='wrapper'>
+            <div className="slider-last">
+              <Image src={c2} alt='' />
+              <div className='content'>
+                <h5>Understanding TeliportMe cul..</h5>
+                <p className='body2'>
+                  Culture is a heavy word, its not something that can be measured
+                  yet can be felt within the confines of an office space,
+                  interactions of your product and behaviour of
+                </p>
+                <div className='footer'>
+                  <div className='left'>
+                    <Image src={daniel} alt='' />
+                    <p>Vineet Devaiah</p>
+                  </div>
+                  <div className='right'>
+                    <p className='body2'>Jun 2021</p>
+                    <h4>05</h4>
+                  </div>
+                </div>
+              </div>
+          </div>
+            
           </div>
         </Slider>
       </section>
@@ -215,6 +226,15 @@ const Wrapper = styled.section`
           color: #707070;
         }
       }
+      .slider-last {
+        background-color: #fff;
+        border-radius: 10px;
+      }
+      @media (max-width: 600px) {
+        width: 90%;
+        padding: 0px 10px;
+        background-color: transparent;
+      }
     }
 
     .footer {
@@ -264,7 +284,7 @@ const Wrapper = styled.section`
     // }
   }
   .slick-prev {
-    // left: 65%;
+    left: none;
     // @media (max-width: 900px) {
     //   left: 40%;
     //   transform: translateX(-40%);
@@ -277,15 +297,15 @@ const Wrapper = styled.section`
       align-items: center;
       justify-content: center;
     }
+    @media (max-width: 600px) {
+      left: -13px;
+    }
   }
   .slick-next {
+    left: 96.3%;
     @media (max-width: 500px) {
-      right: -17px;
+      left: calc(93.3% - 13px);
     }
-    // left: 96.3%;
-    // @media (max-width: 900px) {
-    //   left: 96.3%;
-    // }
     :before {
       content: url('images/right-arrow.png');
       color: #222;
