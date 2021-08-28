@@ -134,8 +134,11 @@ const Wrapper = styled.footer`
   .btn {
     position: relative;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    margin-top: 2rem;
+    margin-top: 1rem;
     transition: 0.3s ease;
+    @media(max-width: 600px) {
+      margin-top: 10px;
+    }
 
     &:hover {
       clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
@@ -307,6 +310,9 @@ const ColumnTop = styled.div`
   h4 {
     color: #f5bc63;
     font-size: 18px;
+    @media (max-width: 600px) {
+      margin-bottom: 10px;
+    }
   }
   .font-20 {
     font-size: 14px;

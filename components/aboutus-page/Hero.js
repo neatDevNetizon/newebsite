@@ -145,8 +145,8 @@ const HeroSection = styled.div`
       display: flex;
     }
     .mobile-manager div:first-child {
-      width: 150px;
-      height: 180px;
+      width: 80px;
+      height: 100px;
       margin-bottom: 50px;
     }
     .mobile-manager div:last-child {
@@ -188,7 +188,7 @@ const HeroSection = styled.div`
       font-size: 22px;
       font-weight: normal;
       @media (max-width: 800px) {
-        font-size: 18px;
+        font-size: 16px;
       }
     }
   }

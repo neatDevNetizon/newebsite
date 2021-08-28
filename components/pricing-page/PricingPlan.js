@@ -244,7 +244,7 @@ const Wrapper = styled.section`
   }
 
   .container {
-    margin-top: 30px;
+    margin-top: 0px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;

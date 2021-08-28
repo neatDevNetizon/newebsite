@@ -19,16 +19,16 @@ const Wrapper = styled.section``;
 
 const HeroSection = styled.div`
   margin: 0 auto;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 
   max-width: 1170px;
   text-align: center;
   @media (max-width: 800px) {
-    padding-top: 120px;
+    padding-top: 100px;
   }
   @media (max-width: 600px) {
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     .hide-mobile {
       display: none;
     }
@@ -54,6 +54,7 @@ const HeroSection = styled.div`
     font-family: Spartan, sans-serif;
     @media (max-width: 600px) {
       font-size: 36px;
+      line-height: 44px;
     }
   }
 `;

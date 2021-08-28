@@ -101,7 +101,7 @@ const Header = styled.div`
     @media (max-width: 600px) {
       font-size: 18px;
       margin: -1px 0px 20px -9px;
-      padding: 24px 0px 66px;
+      padding: 24px 0px 10px;
       line-height: 28px;
     }
   }
@@ -167,6 +167,8 @@ const SingleItem = styled.div`
     transition: 0.3s ease;
     @media (max-width: 600px) {
       margin-bottom: 8px;
+      margin-bottom: 6px;
+      line-height: 30px;
     }
   }
   p {
@@ -183,6 +185,7 @@ const SingleItem = styled.div`
     @media (max-width: 600px) {
       font-size: 16px;
       margin-bottom: 1rem;
+      padding-top: 0px;
     }
   }
   :hover {

@@ -10,7 +10,7 @@ const Hero = () => {
         <Navbar />
         <HeroSection>
           <div className="hero-contianer">
-            <p className='create'></p>
+            {/* <p className='create'></p> */}
             <h1 className='title'>
               A complete virtual tour platform, engineered for growth
             </h1>
@@ -46,9 +46,11 @@ const Wrapper = styled.div`
     overflow: hidden;
     @media (max-width: 800px) {
       height: 80vh;
+      min-height: 600px;
     }
     @media (max-width: 600px) {
-      height: 350px;
+      height: 500px;
+      min-height: 500px;
     }
     ::before {
       content: '';
@@ -82,9 +84,7 @@ const Wrapper = styled.div`
 `;
 
 const HeroSection = styled.div`
-  @media (max-width: 800px) {
-    margin-top: 80px;
-  }
+  
   width: 100vw;
   min-height: 50vh;
   display: flex;
@@ -92,7 +92,7 @@ const HeroSection = styled.div`
   gap: 1rem;
   justify-content: center;
   z-index: 10;
-  margin-top: -1rem;
+  margin-top: 1rem;
   position: relative;
   align-items: center;
   .hero-contianer {
@@ -105,6 +105,9 @@ const HeroSection = styled.div`
       width: 90vw;
       jusify-content: center;
     }
+  }
+  @media (max-width: 800px) {
+    margin-top: 90px;
   }
   @media (max-width: 1350px) {
     width: auto;

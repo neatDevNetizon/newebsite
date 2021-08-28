@@ -160,7 +160,7 @@ const Header = styled.div`
     text-align: start;
     @media (max-width: 600px) {
       padding: 50px 0px 0px;
-      margin: 7px 39px 8px -12px;
+      margin: 7px 39px 8px 0px;
       font-size: 30px;
       line-height: 39px;
       font-weight: 800;
@@ -182,8 +182,8 @@ const Header = styled.div`
     color: #6B7280;
     @media (max-width: 600px) {
       font-size: 18px;
-      margin: -1px 0px 20px -9px;
-      padding: 24px 0px 66px;
+      margin: -1px 0px 20px 0px;
+      padding: 24px 0px 10px;
       line-height: 28px;
     }
   }
