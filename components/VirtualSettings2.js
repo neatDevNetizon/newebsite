@@ -180,6 +180,7 @@ const Header = styled.div`
     font-family: Spartan, sans-serif;
     letter-spacing: normal;
     color: #6B7280;
+    font-weight: 600;
     @media (max-width: 600px) {
       font-size: 18px;
       margin: -1px 0px 20px 0px;
