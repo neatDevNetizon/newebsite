@@ -279,6 +279,9 @@ const Wrapper = styled.section`
     }
   }
   .slick-next {
+    @media (max-width: 500px) {
+      right: -17px;
+    }
     // left: 96.3%;
     // @media (max-width: 900px) {
     //   left: 96.3%;
