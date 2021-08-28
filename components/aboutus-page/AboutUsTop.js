@@ -10,11 +10,8 @@ const AboutUsTop = () => {
                     About Us
                 </h3>
             </div>
-            <div className="image">
+            <div className="image image-show">
                 <Image src={aboutImg} alt="" />
-                {/* <button className="btn about-btn">
-                    Start Trial And Request For Demo
-                </button> */}
             </div>
             <div className="container">
                 <div className="text">
@@ -42,18 +39,22 @@ const AboutUsTop = () => {
                     </p>
                 </div>
             </div>
+            <div className="image image-hidden">
+                <Image src={aboutImg} alt="" />
+            </div>
         </Wrapper>
     );
 };
 const Wrapper = styled.div`
-    margin-top: 200px;
     display: grid;
-    gap: 2rem;
+    margin-top: 50px;
     margin-bottom: 20px;
     align-items: center;
     @media (min-width: 1100px) {
         grid-template-columns: 1fr 1fr;
         margin-bottom: 100px;
+        gap: 2rem;
+        margin-top: 200px;
     }
     .hide-title {
         display: none;
@@ -69,6 +70,19 @@ const Wrapper = styled.div`
             display: none;
         }
     }
+    .image-hidden {
+        display: none !important;
+        @media (max-width: 1100px){
+            display: block !important;
+            margin-top: 15px;
+        }
+    }
+    .image-show {
+        @media (max-width: 1100px){
+            display: none !important;
+        }
+    }
+
     .image {
         display: flex;
         flex-direction: column;
@@ -89,7 +103,6 @@ const Wrapper = styled.div`
     .container {
         min-height: 633px;
         display: block;
-        margin-bottom: 2rem;
         @media (min-width: 1100px) {
             position: relative;
         }

@@ -37,10 +37,21 @@ const Wrapper = styled.div`
     grid-template-columns: 1fr 1fr;
   }
   .content {
-    max-width: 414px;
+    // max-width: 414px;
     color: #6b7280;
+    background-color: #fff;
+    box-shadow: var(--shadow-2);
+    border-radius: 10px;
+    width: 95%;
+    padding: 2.5rem;
+    z-index: 9999;
+    @media (max-width: 1100px) {
+        width: 100%;
+    }
   }
   .image {
+    display: flex;
+    justify-content: center;
     img {
       max-width: 100%;
     }

@@ -3,7 +3,38 @@ import styled from "styled-components";
 import dot from "./../../images/Ellipse.png";
 import Image from "next/image";
 import c23 from '../../images/c23.png';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 const Story = () => {
+    const settings = {
+        className: '',
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+            },
+          },
+          {
+            breakpoint: 1000,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 500,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      };
     return (
         <Wrapper className="section">
             <div className="title">
@@ -132,7 +163,7 @@ const Story = () => {
                     </div>
                 </div>
             </div>
-            <div className="blank-container">
+            {/* <div className="blank-container">
                 <div className="blank-square">
                     <div className='blank-single'>
                         <div className="content"></div>
@@ -153,6 +184,28 @@ const Story = () => {
                         <div className="content"></div>
                     </div>
                 </div>
+            </div> */}
+            <div className="blank-container">
+                <Slider {...settings} >
+                    <div className='blank-single'>
+                        <div className="content"></div>
+                    </div>
+                    <div className='blank-single'>
+                        <div className="content"></div>
+                    </div>
+                    <div className='blank-single'>
+                        <div className="content"></div>
+                    </div>
+                    <div className='blank-single'>
+                        <div className="content"></div>
+                    </div>
+                    <div className='blank-single'>
+                        <div className="content"></div>
+                    </div>
+                    <div className='blank-single'>
+                        <div className="content"></div>
+                    </div>
+                </Slider>
             </div>
         </Wrapper>
     );
@@ -238,14 +291,22 @@ const Wrapper = styled.div`
         @media (max-width: 600px) {
             margin-top: 40px;
         }
-        .blank-single {
-            .content {
-                width: 320px;
-                height: 300px;
-                background-color: #6B7280;
-                border: 1px solid #707070;
+        
+    }
+    .blank-single {
+        padding: 0px 10px;
+        .content {
+            width: 320px;
+            height: 300px;
+            background-color: #6B7280;
+            border: 1px solid #707070;
+            @media(max-width: 500px) {
+                width: 100%;
             }
         }
+    }
+    .slick-arrow {
+        display: none !important;
     }
 `;
 export default Story;
