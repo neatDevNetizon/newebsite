@@ -279,7 +279,7 @@ const Wrapper = styled.section`
     }
   }
   .slick-next {
-    left: 96.3%;
+    // left: 96.3%;
     // @media (max-width: 900px) {
     //   left: 96.3%;
     // }
