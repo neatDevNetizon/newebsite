@@ -166,6 +166,9 @@ const CarouselWrapper = styled.div`
     @media (min-width: 900px) {
       grid-template-columns: 320px 1fr;
     }
+    @media (max-width: 600px) {
+      padding: 3rem 2rem;
+    }
   }
   .left {
     /* position: relative; */
@@ -190,12 +193,14 @@ const CarouselWrapper = styled.div`
       }
     }
     .mobile-image {
-      width: 150px;
-      height: 200px;
+      width: 100px;
+      height: 130px;
     }
     .mobile-writer {
       padding-left: 1rem;
-      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
       h4 {
         font-weight: 600;
         letter-spacing: 2px;
@@ -222,16 +227,16 @@ const CarouselWrapper = styled.div`
     }
   }
   .img-container {
-    height: 300px;
     margin-bottom: 1rem;
     border-radius: 10px;
     width: 250px;
+    height: 300px;
     object-fit: cover;
     overflow: hidden;
     @media (max-width: 600px) {
-      height: 250px;
+      height: 150px;
+      width: 120px;
       max-width: 280px;
-      width: 70vw;
     }
 
     img {
