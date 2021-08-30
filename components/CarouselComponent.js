@@ -99,13 +99,13 @@ const CarouselComponent = () => {
               </div>
             </div>
             <div className='right'>
-              <h2>Powering our tours</h2>
+              <h3>Powering our tours</h3>
               <p className='review'>
                 We will definitely use this APP for our future customers in realestate and small business ...! Excellent solution 👌❤️
               </p>
               <div className="mobile-carousel">
                 <div className='mobile-image'>
-                  <Image src={man} alt='' />
+                  <Image src={man2} alt='' />
                 </div>
                 <div className='mobile-writer'>
                   <h4>Sandro</h4>
@@ -155,6 +155,7 @@ const CarouselWrapper = styled.div`
     padding: 2rem 0rem;
   }
   .container {
+
     display: grid !important;
     background-color: #FFE8B9;
     width: 90vw;
@@ -162,12 +163,18 @@ const CarouselWrapper = styled.div`
     padding: 3rem;
     margin: 0 auto;
     border-radius: 10px;
+    height: max-content;
 
     @media (min-width: 900px) {
       grid-template-columns: 320px 1fr;
     }
     @media (max-width: 600px) {
       padding: 3rem 2rem;
+    }
+  }
+  .slick-slide {
+    @media(max-width: 600px){
+      padding: 0px 10px;
     }
   }
   .left {
