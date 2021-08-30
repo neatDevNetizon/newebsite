@@ -115,6 +115,11 @@ const Wrapper = styled.section`
   @media (max-width: 600px) {
     margin-top: 80px;
   }
+  .slick-slide {
+    @media(max-width: 600px){
+      padding: 0px 10px;
+    }
+  }
   .section {
     padding-left: 1rem;
     max-width: 1200px;
