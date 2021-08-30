@@ -301,6 +301,7 @@ align-items: center;
     }
   }
   .signup-btn {
+    margin-top: 15px;
     height: 46px;
     width: 116px;
     background: #fff;

@@ -117,8 +117,12 @@ const Wrapper = styled.nav`
     }
   }
   nav {
-    padding-top: 1.5rem;
-    padding-bottom: 2rem;
+    // padding-top: 1.5rem;
+    // padding-bottom: 2rem;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90vw;
     max-width: 1200px;
     margin: 0 auto;

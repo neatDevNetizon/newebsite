@@ -22,7 +22,7 @@ const SignInWrapper = () => {
           </div>
           <div >
             <Link href="sign-up" passHref>
-              <button className="btn signup-btn">Sign Up</button>
+              <button className="btn signup-btn">Go Sign Up</button>
             </Link>
           </div>
         </div>
