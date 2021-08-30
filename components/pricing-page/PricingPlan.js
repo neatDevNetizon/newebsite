@@ -201,6 +201,9 @@ const Wrapper = styled.section`
       padding-top: 50px !important;
     }
   }
+  .slick-arrow {
+    display: none !important;
+  }
   .active {
     font-weight: 700;
   }
