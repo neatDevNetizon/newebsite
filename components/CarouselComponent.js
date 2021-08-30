@@ -193,6 +193,7 @@ const CarouselWrapper = styled.div`
       }
     }
     .mobile-image {
+      min-width: 100px;
       width: 100px;
       height: 130px;
     }

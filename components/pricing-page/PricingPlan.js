@@ -197,6 +197,9 @@ const Wrapper = styled.section`
     .slick-slide {
       padding: 0 0.5rem;
     }
+    @media(max-width: 600px) {
+      padding-top: 50px !important;
+    }
   }
   .active {
     font-weight: 700;

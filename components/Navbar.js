@@ -256,7 +256,6 @@ const MobileNav = styled.div`
     .logo {
       height: 40px;
       width: 40px;
-      margin-left: 0.5rem;
     }
 
     .bar {
